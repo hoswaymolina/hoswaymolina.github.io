@@ -25,3 +25,14 @@ I decided to begin by seeing how the Middle East and North Africa (MENA) region 
 <img src="images/bank/q_region_rankings.png?raw=true"/>
 <img src="images/bank/r_region_rankings.png?raw=true"/>
 
+So, MENA ranks 9th out of 12. I then turned my attention to Jordan's ranking global ranking in amount owed:
+
+<img src="images/bank/q_total_owed_global.png?raw=true"/>
+<img src="images/bank/r_total_owed_global.png?raw=true"/>
+
+This shows a ranking of 80th out of 130. So, in terms of amount owed, Jordan is in the **40th percentile** in amount owed to the IDA. It's safe to say that Jordan is roughly middle-of-the-road.
+
+I was mainly curious about how Jordan compared to other MENA countries, so I dove deeper into trends within the region. I looked at the number of loans taken out and placed the countries in order:
+
+<img src="images/bank/q_numloans.png?raw=true"/>
+<img src="images/bank/r_numloans.png?raw=true"/>
