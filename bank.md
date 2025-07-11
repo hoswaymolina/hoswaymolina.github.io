@@ -8,7 +8,7 @@ I discovered that:
 
 - Among Middle Eastern and North African countries, **Jordan ranks 5th out of 10** in number of loans.
 - Globally, **Jordan ranks 80th out of 130** in amount owed to the IDA.
-- Education and highways are **among the top 10 project types** pursued in Jordan.
+- **Education and highways** are **among the top 10 project types** pursued in Jordan.
 
 Keep reading to see how I found out!
 
@@ -18,4 +18,6 @@ This dataset is a .csv file containing historical data from the [IDA Statement O
 
 It is worth noting that, as a historical database, the sums used in this project are "cumulative" sums, not regular sums. That is, when the amount owed is listed, it does not represent the amount owed in that instance. The choice to use cumulative sums versus regular sums was for simplicity's sake.
 
-## 
+## Analysis
+
+I decided to begin by seeing how the Middle East and North Africa (MENA) region compared to the other regions. I summed the amount owed to the IDA, grouped by region, and then placed the rows in descending order:
