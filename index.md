@@ -4,7 +4,7 @@
 
 ### Learn About My Projects
 
-#### [World Bank Analysis: Jordan](/bank)
+#### [Debt and Development in the Levant: Jordan and the World Bank](/bank)
 <img src="images/jordan.jpg?raw=true"/>
 In this project, I utilized SQL to uncover aggregations from almost 1.5 million rows as I evaluated Jordan's standing with the World Bank.
 
