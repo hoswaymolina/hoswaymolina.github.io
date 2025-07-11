@@ -1,6 +1,6 @@
 # Debt and Development in the Levant: Jordan and the World Bank
 
-
+<img src="images/bank/world_bank_logo.png?raw=true"/>
 
 In June 2025, I went on a transformative and impactful trip to Jordan. I loved immersing myself in the language, food, and people of a nation quite different than any other I had visited.
 
