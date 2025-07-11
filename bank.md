@@ -20,6 +20,8 @@ It is worth noting that, as a historical database, the sums used in this project
 
 ## Analysis
 
+### Overview
+
 I decided to begin by seeing how the Middle East and North Africa (MENA) region compared to the other regions. I summed the amount owed to the IDA, grouped by region, and then placed the rows in descending order:
 
 <img src="images/bank/q_region_rankings.png?raw=true"/>
@@ -36,3 +38,38 @@ I was mainly curious about how Jordan compared to other MENA countries, so I dov
 
 <img src="images/bank/q_numloans.png?raw=true"/>
 <img src="images/bank/r_numloans.png?raw=true"/>
+
+Being 4th in the number loans (2,732), it was natural to check the dollar amount of those loans to see if this changed anything. I decided to check by summing the principal amount of the loans by country:
+
+<img src="images/bank/q_principal.png?raw=true"/>
+<img src="images/bank/r_principal.png?raw=true"/>
+
+Finally, I made a comparison of service charge rate among MENA countries. In my initial query, I noticed that MENA showed up as a country name. Since this likely applied to an aggregate of the countries not represented individually in the dataset (perhaps because they have limited interaction with the IDA), I omitted them from the list with an AND clause. In this ranking, Jordan turned out with the second place spot:
+
+<img src="images/bank/q_avg_serv.png?raw=true"/>
+<img src="images/bank/r_avg_serv.png?raw=true"/>
+
+I think this makes sense. Since Jordan is better off than several of the countries in the region, they can afford to pay higher service charge rates.
+
+After comparing Jordan with other countries, it was time to do a deeper dive into Jordan.
+
+### Jordan
+
+One of my initial goals was to find out what projects the loans go to. First, I found out which projects were the most common, and limited the selection to the top 15:
+
+<img src="images/bank/q_common_proj.png?raw=true"/>
+<img src="images/bank/r_common_proj.png?raw=true"/>
+
+Education and highway projects populate the top 15 multiple times. I then found out which projects cost the most, or at least, which ones Jordan borrowed the most amount of money for:
+
+<img src="images/bank/q_proj.png?raw=true"/>
+<img src="images/bank/r_proj.png?raw=true"/>
+
+Unfortunately, the top 3 projects were labeled a very ambiguous "Economic Opportunities", which does not tell us very much. However, my personal experience in Jordan could make sense of places 4, 6, and 7. I learned that Jordan is a very water scarce nation - it was necessary to constantly beware of water spent showering, cooking, and cleaning, lest you run out of water in your apartment for the rest of the week! Naturally, Jordan would want to invest projects concerning water supply and irrigation.
+
+In order to practice using the MAX function in SQL, I used it to find out the latest date that Jordan closed on a loan. This date turned out to be slightly earlier than expected:
+
+<img src="images/bank/q_latest_date.png?raw=true"/>
+<img src="images/bank/r_latest_date.png?raw=true"/>
+
+In 2021, two loans were closed. One loan was closed in each of 2023 and 2024. This makes for an average of one loan closed per year since 2021. These were all closed on 31 January. However, no loan was closed on 31 January of 2025. This could be a point of further research - perhaps, if there is a yearly schedule, Jordan will pay 2 next year to keep on track.
