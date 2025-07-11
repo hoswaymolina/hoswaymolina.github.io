@@ -6,7 +6,7 @@
 
 #### [World Bank Analysis: Jordan](/bank)
 <img src="images/jordan.jpg?raw=true"/>
-Tolulope is the best
+In this project, I utilized SQL to uncover aggregations from almost 1.5 million rows as I evaluated Jordan's standing with the World Bank.
 
 ---
 #### [Food Delivery Analysis Projecct](https://www.linkedin.com/pulse/marketing-trick-great-deal-analysis-ifood-delivery-data-josu%C3%A9-molina-oqhwc)
