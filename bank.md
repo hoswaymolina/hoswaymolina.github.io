@@ -1,5 +1,7 @@
 # Debt and Development in the Levant: Jordan and the World Bank
 
+
+
 In June 2025, I went on a transformative and impactful trip to Jordan. I loved immersing myself in the language, food, and people of a nation quite different than any other I had visited.
 
 The country of Jordan will always hold a special place in my heart. Naturally, when I started the first SQL project in Avery Smith's Data Career Jumpstart, I knew that I would focus on Jordanian data. Among Middle Eastern nations, Jordan is quite stable. Historically, they have also had much support and influence from the West. All this considered, I knew it would be interesting to see how Jordan matched up relative to other countries in the region (and across the world). Have they borrowed more or less than others? What kinds of projects have they directed those loans to?
@@ -73,3 +75,13 @@ In order to practice using the MAX function in SQL, I used it to find out the la
 <img src="images/bank/r_latest_date.png?raw=true"/>
 
 In 2021, two loans were closed. One loan was closed in each of 2023 and 2024. This makes for an average of one loan closed per year since 2021. These were all closed on 31 January. However, no loan was closed on 31 January of 2025. This could be a point of further research - perhaps, if there is a yearly schedule, Jordan will pay 2 next year to keep on track.
+
+## Review
+
+During this project, I was once again impressed by the efficiency and utility of SQL. This analysis would have been too much for Microsoft Excel, but it was very manageable with SQL.
+
+In this project, we learned that while Jordan is dependent on loans from the IDA, they are only moderately dependent compared to other nations. Their rankins in several categories put them at the halfway point (or lower half) for amount borrowed and other metrics. NGOs concerned with assisting developing countries may use this data to help them distribute resources across the region. For similar reasons, the IDA can also benefit from this information. Furthermore, This data can influence public perceptions of the economic state of the region - in terms of amount owed (being 9th out of 12), MENA is performing better than most regions.
+
+## Connect with me!
+
+Thank you for looking at my SQL project! Feel free to connect on [LinkedIn](https://www.linkedin.com/in/josué-molina-90ba991a9) and share any feedback!
