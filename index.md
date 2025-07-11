@@ -19,9 +19,9 @@ For this project, I explored what a good analytics PowerPoint presentation shoul
 I analyzed over 2000 rows of food delivery data using Microsoft Excel. I practiced Pivot tables, pivot charts, aggregation functions, and cleaning techniques among other things. I made the write-up in a LinkedIn article.
 
 ---
-#### [Education Project](https://public.tableau.com/views/MA_Education_17518477770990/MassachusettsEducationSummary?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
-[<img src="images/21 Days To Data Challenge What I've Learned Cover.png?raw=true"/>](https://public.tableau.com/views/MA_Education_17518477770990/MassachusettsEducationSummary?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
-In this case study from Data Analytics Accelerator, I was prompted to analyze the State of Massachusetts education data. The main focuses were: What schools are struggling the most? How does class size affect college admission? What are the top math schools in the state? The link to my video walk-through of the dashboard can be found #### [here](https://www.loom.com/share/28d68a0c47c7450bae2d4f214489b52f).
+#### [Education Project](https://www.loom.com/share/28d68a0c47c7450bae2d4f214489b52f)
+[<img src="images/ma_education.png?raw=true"/>](https://www.loom.com/share/28d68a0c47c7450bae2d4f214489b52f)
+In this case study from Data Analytics Accelerator, I was prompted to analyze the State of Massachusetts education data. The main focuses were: What schools are struggling the most? How does class size affect college admission? What are the top math schools in the state? The link to the dashboard itself can be found [here](https://public.tableau.com/views/MA_Education_17518477770990/MassachusettsEducationSummary?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
 
 ---
 
