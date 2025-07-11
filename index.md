@@ -14,8 +14,8 @@ Tolulope is the best
 For this project, I explored what a good analytics PowerPoint presentation should entail. It talks about main talking points, how to tie data to the business value, and much more. 
 
 ---
-#### [Food Delivery Analysis Projecct]((https://www.linkedin.com/pulse/marketing-trick-great-deal-analysis-ifood-delivery-data-josu%C3%A9-molina-oqhwc)(https://www.linkedin.com/pulse/marketing-trick-great-deal-analysis-ifood-delivery-data-josu%C3%A9-molina-oqhwc))
-[<img src="images/excel_img.png?raw=true"/>]([https://www.linkedin.com/pulse/marketing-trick-great-deal-analysis-ifood-delivery-data-josu%C3%A9-molina-oqhwc](https://www.linkedin.com/pulse/marketing-trick-great-deal-analysis-ifood-delivery-data-josu%C3%A9-molina-oqhwc)
+#### [Food Delivery Analysis Projecct](https://www.linkedin.com/pulse/marketing-trick-great-deal-analysis-ifood-delivery-data-josu%C3%A9-molina-oqhwc)
+[<img src="images/excel_img.png?raw=true"/>](https://www.linkedin.com/pulse/marketing-trick-great-deal-analysis-ifood-delivery-data-josu%C3%A9-molina-oqhwc)
 I analyzed over 2000 rows of food delivery data using Microsoft Excel. I practiced Pivot tables, pivot charts, aggregation functions, and cleaning techniques among other things.
 
 
