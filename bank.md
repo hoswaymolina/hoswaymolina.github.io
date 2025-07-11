@@ -1,4 +1,21 @@
-# Bank Project
+# Debt and Development in the Levant: Jordan and the World Bank
 
+In June 2025, I went on a transformative and impactful trip to Jordan. I loved immersing myself in the language, food, and people of a nation quite different than any other I had visited.
 
-This is my bank project
+The country of Jordan will always hold a special place in my heart. Naturally, when I started the first SQL project in Avery Smith's Data Career Jumpstart, I knew that I would focus on Jordanian data. Among Middle Eastern nations, Jordan is quite stable. Historically, they have also had much support and influence from the West. All this considered, I knew it would be interesting to see how Jordan matched up relative to other countries in the region (and across the world). Have they borrowed more or less than others? What kinds of projects have they directed those loans to?
+
+I discovered that:
+
+- Among Middle Eastern and North African countries, **Jordan ranks 5th out of 10** in number of loans.
+- Globally, **Jordan ranks 80th out of 130** in amount owed to the IDA.
+- Education and highways are **among the top 10 project types** pursued in Jordan.
+
+Keep reading to see how I found out!
+
+## The Dataset
+
+This dataset is a .csv file containing historical data from the [IDA Statement Of Credits, Grants and Guarantees](https://financesone.worldbank.org/ida-statement-of-credits-grants-and-guarantees-historical-data/DS00976), which is available on the World Bank Group website. The data used for this project was updated on June 30, 2025. There are 1.4 million rows, making SQL a much better choice for analysis than Excel. I used CSVFiddle to write queries. I enjoyed how simple and straightforward the environment is - it's perfect for learning SQL, while hosts like BigQuery can be more confusing for beginners.
+
+It is worth noting that, as a historical database, the sums used in this project are "cumulative" sums, not regular sums. That is, when the amount owed is listed, it does not represent the amount owed in that instance. The choice to use cumulative sums versus regular sums was for simplicity's sake.
+
+## 
