@@ -21,3 +21,7 @@ It is worth noting that, as a historical database, the sums used in this project
 ## Analysis
 
 I decided to begin by seeing how the Middle East and North Africa (MENA) region compared to the other regions. I summed the amount owed to the IDA, grouped by region, and then placed the rows in descending order:
+
+<img src="images/bank/q_region_rankings.png?raw=true"/>
+<img src="images/bank/r_region_rankings.png?raw=true"/>
+
