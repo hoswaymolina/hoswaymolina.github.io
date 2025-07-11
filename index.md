@@ -16,16 +16,12 @@ For this project, I explored what a good analytics PowerPoint presentation shoul
 ---
 #### [Food Delivery Analysis Projecct](https://www.linkedin.com/pulse/marketing-trick-great-deal-analysis-ifood-delivery-data-josu%C3%A9-molina-oqhwc)
 [<img src="images/excel_img.png?raw=true"/>](https://www.linkedin.com/pulse/marketing-trick-great-deal-analysis-ifood-delivery-data-josu%C3%A9-molina-oqhwc)
-I analyzed over 2000 rows of food delivery data using Microsoft Excel. I practiced Pivot tables, pivot charts, aggregation functions, and cleaning techniques among other things. I made the write-up a LinkedIn article.
-
+I analyzed over 2000 rows of food delivery data using Microsoft Excel. I practiced Pivot tables, pivot charts, aggregation functions, and cleaning techniques among other things. I made the write-up in a LinkedIn article.
 
 ---
-#### [Education Project](https://www.linkedin.com/pulse/massachusetts-education-analysis-samantha-paul/)
-[<img src="images/21 Days To Data Challenge What I've Learned Cover.png?raw=true"/>](https://www.linkedin.com/pulse/what-i-learned-21-days-data-avery-smith)
-In this case study from Data Analytics Accelerator, I was prompted to analyze the State of Massachusetts education data. The main focuses were:
-What schools are struggling the most?
-How does class size affect college admission?
-What are the top math schools in the state? 
+#### [Education Project](https://public.tableau.com/views/MA_Education_17518477770990/MassachusettsEducationSummary?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[<img src="images/21 Days To Data Challenge What I've Learned Cover.png?raw=true"/>](https://public.tableau.com/views/MA_Education_17518477770990/MassachusettsEducationSummary?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+In this case study from Data Analytics Accelerator, I was prompted to analyze the State of Massachusetts education data. The main focuses were: What schools are struggling the most? How does class size affect college admission? What are the top math schools in the state? The link to my video walk-through of the dashboard can be found #### [here](https://www.loom.com/share/28d68a0c47c7450bae2d4f214489b52f).
 
 ---
 
