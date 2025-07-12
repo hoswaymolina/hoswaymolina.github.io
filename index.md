@@ -7,7 +7,7 @@
 ## Data Analytics
 
 #### [Debt and Development in the Levant: Jordan and the World Bank](/bank)
-<img src="images/jordan.jpg?raw=true"/>
+[<img src="images/jordan.jpg?raw=true"/>](/bank)
 In this project, I utilized SQL to uncover aggregations from almost 1.5 million rows as I evaluated Jordan's standing with the World Bank.
 
 ---
@@ -25,3 +25,8 @@ In this case study from Data Analytics Accelerator, I was prompted to analyze th
 ### [Indiana University REU Project: Cubulated Holonomy](files/Cubulated_Holonomy_REU_report.pdf)
 [<img src="images/REUfig.png?raw=true"/>](files/Cubulated_Holonomy_REU_report.pdf)
 [Stephanie Atherton](https://linktr.ee/toyTeX) and I collaborated on this NSF-funded research project in summer 2024! We focused on the following research question: given the holonomy group of the cube on a surface made of squares, what subgroups can we obtain by varying the surface? We used abstract algebra and algebraic topology to find out.
+
+---
+### [Using Data to Model Feral Cat Populations](/files/TNR_cat.pdf)
+[<img src="images/catfig.png?raw=true"/>](files/TNR_cat.pdf)
+My senior year at Texas Tech, I took a mathematical modeling class in which each group used real-world, local data to create feral cat population models. In this project, I worked with [Gbemi] and [Ryan] to produce equations and predictions based on the Trap, Neuter, and Return rates adopted by local shelters. My focus was on researching reasonable equation parameters and cleaning/visualizing over 8000 rows of local feral cat data in Microsoft Excel. The dataset can be found [here](files/allcats-withjuly.csv). The final Google Slides presentation can be found [here](files/JoRG_long.pdf).
