@@ -84,4 +84,4 @@ In this project, we learned that while Jordan is dependent on loans from the IDA
 
 ## Connect with me!
 
-Thank you for looking at my SQL project! Feel free to connect on [LinkedIn](https://www.linkedin.com/in/josué-molina-90ba991a9) and share any feedback!
+Thank you for looking at my SQL project! Feel free to connect on [LinkedIn](https://www.linkedin.com/in/hoswaymolina) and share any feedback!
