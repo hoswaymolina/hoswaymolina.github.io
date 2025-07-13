@@ -6,8 +6,8 @@
 
 ## Data Analytics
 
-#### [Debt and Development in the Levant: Jordan and the World Bank](/bank)
-[<img src="images/jordan.jpg?raw=true"/>](/bank)
+#### [Debt and Development in the Levant: Jordan and the World Bank](/dataprojects/bank)
+[<img src="images/jordan.jpg?raw=true"/>](/dataprojects/bank)
 In this project, I utilized SQL to uncover aggregations from almost 1.5 million rows as I evaluated Jordan's standing with the World Bank.
 
 ---
