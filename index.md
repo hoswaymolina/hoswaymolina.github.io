@@ -2,8 +2,9 @@
 
 ---
 
-### Learn About My Projects
+## Learn About My Projects
 
+---
 ## Data Analytics
 
 #### [Debt and Development in the Levant: Jordan and the World Bank](/dataprojects/bank)
