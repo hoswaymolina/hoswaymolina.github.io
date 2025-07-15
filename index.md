@@ -17,8 +17,8 @@ In this project, I utilized SQL to uncover aggregations from almost 1.5 million 
 I analyzed over 2000 rows of food delivery data using Microsoft Excel. I practiced Pivot tables, pivot charts, aggregation functions, and cleaning techniques among other things. I made the write-up in a LinkedIn article.
 
 ---
-#### [Education Project](/ma)
-[<img src="images/ma_education.png?raw=true"/>](/ma)
+#### [Education Project](/dataprojects/ma)
+[<img src="images/ma_education.png?raw=true"/>](/dataprojects/ma)
 In this case study from Data Analytics Accelerator, I was prompted to analyze the State of Massachusetts education data. The main focuses were: What schools are struggling the most? How does class size affect college admission? What are the top math schools in the state? The link to the dashboard itself can be found [here](https://public.tableau.com/views/MA_Education_17518477770990/MassachusettsEducationSummary?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
 
 ## Mathematics Research/Projects
