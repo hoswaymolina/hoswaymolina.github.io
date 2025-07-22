@@ -1,6 +1,6 @@
 # Optimizing Hospitals with SQL
 
-<img src="/images/health/sql.png?raw=true"/>
+<img src="/images/health/SQL.png?raw=true"/>
 
 Have you ever stayed at a hospital? Maybe you have been a patient; maybe you knew someone who was a patient and were keeping them company. There is a wide range of reasons that someone may be admitted to a hospital - some are more serious than others. Either way, a decent experience at the hospital is important (given the tough situations of the people staying there), and unfortunately those can be hard to come by at hospitals.
 
@@ -18,7 +18,7 @@ The dataset comes from a research article concerning hospital readmission. The l
 
 ## Cleaning
 
-I performed some brief data cleaning for some of the columns - some of the data types for numbers ended up as varchars instead of integers, so I wrote some queries using ALTER and MODIFY: 
+I performed some brief data cleaning for some of the columns - some of the data types for numbers ended up as varchars instead of integers, so I wrote some queries using ALTER and MODIFY. I then wrote a query to return the data types of the columns to confirm the data types: 
 
 <img src="/images/health/clean1_q.png?raw=true"/>
 <img src="/images/health/clean2_q.png?raw=true"/>
@@ -67,7 +67,7 @@ I thought it would be a good idea to produce a list summarizing each patient's r
 <img src="/images/health/summary_q.png?raw=true"/>
 <img src="/images/health/summary_r.png?raw=true"/>
 
-Since I altered the number of medications column to the integer data type, the ordering of the summaries is correct (descending, by number of medications.)
+Since I altered the number of medications column to the integer data type, the ordering of the summaries is correct (descending, by number of medications). The cleaning work from earlier paid off!
 
 The final question I answered was: How are the top 3 medications ranked by age group? In order to find out, I first created a "long" table with the patient number and medication usage status for each of the top 3 medications (insulin, metformin, and glipizide). This was done with the help of the handy UNION function. This table made it easier to create the ranking; I could select the age, medication, and number of uses. Then, I could use a RANK over the age group to create a column denoting the rank of that medication for that age group. I had to use an INNER JOIN to combine the demographic and health tables, and I didn't want to count non-usage of medication ('No' in the med_usage column). The result was a convenient table which could be further manipulated and sorted by rank:
 
