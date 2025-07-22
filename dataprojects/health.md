@@ -64,6 +64,8 @@ I thought it would be a good idea to produce a list summarizing each patient's r
 SUMMARY QUERY
 SUMMARY
 
+Since I altered the number of medications column to the integer data type, the ordering of the summaries is correct (descending, by number of medications.)
+
 The final question I answered was: How are the top 3 medications ranked by age group? In order to find out, I first created a "long" table with the patient number and medication usage status for each of the top 3 medications (insulin, metformin, and glipizide). This was done with the help of the handy UNION function. This table made it easier to create the ranking; I could select the age, medication, and number of uses. Then, I could use a RANK over the age group to create a column denoting the rank of that medication for that age group. I had to use an INNER JOIN to combine the demographic and health tables, and I didn't want to count non-usage of medication ('No' in the med_usage column). The result was a convenient table which could be further manipulated and sorted by rank:
 
 RANK QUERY
@@ -73,3 +75,8 @@ A simple question from the healthcare provider, but a pretty sophisticated query
 
 ## Takeaways
 
+Using these aggregations and summaries, the hospital is able to make informed decisions to improve patient care. For example, the histogram showing duration of stay distribution can give the staff a better idea of where they stand compared to other hospitals. Maybe increasing the number of beds (or expediting hospital stays in general) will be a higher priority if there are too many stays over the industry standard. When it comes to race data, the hospital can ask further questions about why there are differences in procedures administered (even though we saw that they aren't huge differences). Maybe the rates are disproportionate, even after considering certain conditions that are more prevalent in some races than others.
+
+# Thanks for Reading!
+
+Once again, I have seen how powerful a tool SQL can be. I was glad to get some more experience with it, especially using more advanced functions. I can't wait to keep using these for other projects! Connect with me on [LinkedIn](https://www.linkedin.com/in/hoswaymolina) and share any feedback or comments you may have. Thanks for reading!
