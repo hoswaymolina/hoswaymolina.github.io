@@ -6,6 +6,7 @@ To the end of improving hospital experiences and overall efficiency, data analys
 
 - What is the distribution of time spent in the hospital?
 - Are different races being treated with different standards of care?
+- What are some of the top medications by age group?
 
 Keep reading to see the answers and how I got them!
 
