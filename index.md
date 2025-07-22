@@ -12,17 +12,17 @@
 Read this project to find out about my deep dive into hospital data using more of SQL's functions and capabilities.
 
 ---
-#### [Debt and Development in the Levant: Jordan and the World Bank](/dataprojects/bank.md)
+#### [Debt and Development in the Levant: Jordan and the World Bank (SQL)](/dataprojects/bank.md)
 [<img src="images/jordan.jpg?raw=true"/>](/dataprojects/bank)
 In this project, I utilized SQL to uncover aggregations from almost 1.5 million rows as I evaluated Jordan's standing with the World Bank.
 
 ---
-#### [Food Delivery Analysis Projecct](https://www.linkedin.com/pulse/marketing-trick-great-deal-analysis-ifood-delivery-data-josu%C3%A9-molina-oqhwc)
+#### [Food Delivery Analysis Projecct (Excel)](https://www.linkedin.com/pulse/marketing-trick-great-deal-analysis-ifood-delivery-data-josu%C3%A9-molina-oqhwc)
 [<img src="images/excel_img.png?raw=true"/>](https://www.linkedin.com/pulse/marketing-trick-great-deal-analysis-ifood-delivery-data-josu%C3%A9-molina-oqhwc)
 I analyzed over 2000 rows of food delivery data using Microsoft Excel. I practiced Pivot tables, pivot charts, aggregation functions, and cleaning techniques among other things. I made the write-up in a LinkedIn article.
 
 ---
-#### [Education Project](/dataprojects/ma.md)
+#### [Education Project (Tableau)](/dataprojects/ma.md)
 [<img src="images/ma_education.png?raw=true"/>](/dataprojects/ma.md)
 In this case study from Data Analytics Accelerator, I was prompted to analyze the State of Massachusetts education data. The main focuses were: What schools are struggling the most? How does class size affect college admission? What are the top math schools in the state? The link to the dashboard itself can be found [here](https://public.tableau.com/views/MA_Education_17518477770990/MassachusettsEducationSummary?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
 
