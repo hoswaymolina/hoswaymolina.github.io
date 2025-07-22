@@ -7,7 +7,12 @@
 ---
 ## Data Analytics
 
-#### [Debt and Development in the Levant: Jordan and the World Bank](/dataprojects/bank)
+### [Hospital Optimization Using SQL](/dataprojects/health.md)
+[<img src="images/main.jpg?raw=true"/>](/dataprojects/health.md)
+Read this project to find out about my deep dive into hospital data using more of SQL's functions and capabilities.
+
+---
+#### [Debt and Development in the Levant: Jordan and the World Bank](/dataprojects/bank.md)
 [<img src="images/jordan.jpg?raw=true"/>](/dataprojects/bank)
 In this project, I utilized SQL to uncover aggregations from almost 1.5 million rows as I evaluated Jordan's standing with the World Bank.
 
