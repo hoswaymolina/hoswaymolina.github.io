@@ -26,3 +26,19 @@ With the position and team pills in the column and row shelves, I had to do some
 
 `SUM([all_rows (nba_project)].[3P])/SUM([all_rows (nba_project)].[3PA])`
 
+I then used this formula for color and text pills so that lower shooting percentages would be lighter, while higher percentages would be darker. The result was this:
+
+HEATMAP
+
+First, the blank space for Memphis' small forwards is there because there were simply no players listed as small forwards (according to basketball reference). This is further evidence of positionless basketball - the absence of a small forward was not the result of negligence by the general manager, but rather a consequence of the fact that there are multiple players who can fill the "wing" role on the court, even if they're primarily frontcourt of backcourt players.
+
+Second, one of the main highlights for me is the high 3-point percentages of centers from the Nuggets and Knicks. They're shooting over 40 per cent, which is a really good mark - stretch bigs like Karl-Anthony Towns and Nikola Jokić are largely to blame, of course. Speaking of Jokić,
+
+### Points/Rebounds/Assists Plot
+
+These three statistics are the most important when making a glancing assessment of a player's production in the league, and Nikola Jokić is good at racking up all of them. The 3-time MVP and triple-double machine is one of the greatest players of all time, and probably the most skilled center of all time. The bubble chart I created does an excellent job of showing how much of a unicorn he is.
+
+The chart is a scatterplot, but with four dimensions. The x and y axes denote total points and assists, respectively. To show rebounds, I added the TRB (total rebounds) stat to the size marker, meaning larger dots correspond to high rebound numbers. Lastly, I added a color dimension for position - each color refers to one of the 5 positions. What resulted was a dynamic chart that has a lot to say:
+
+BUBBLE CHART
+<img width="1657" height="801" alt="image" src="https://github.com/user-attachments/assets/47333c61-1bd9-44d6-844c-33b401088f62" />
