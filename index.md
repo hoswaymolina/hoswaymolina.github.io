@@ -7,6 +7,10 @@
 ---
 ## Data Analytics
 
+### [Sports Analytics](/dataprojects/bball.md)
+[![NBA_basketball,_Raptors_in_Phoenix](https://github.com/user-attachments/assets/350b6ee2-de24-4ba5-b9f3-9fde4e907af8)](/dataprojects/bball.md)
+
+---
 ### [Hospital Optimization Using SQL](/dataprojects/health.md)
 [<img src="images/main.jpg?raw=true"/>](/dataprojects/health.md)
 Read this project to find out about my deep dive into hospital data using more of SQL's functions and capabilities.
