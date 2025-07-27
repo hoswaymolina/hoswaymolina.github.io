@@ -1,5 +1,7 @@
 # Sports Analytics: A Glance at the 2024-2025 NBA Season using Tableau
 
+<img width="2400" height="497" alt="Tableau_Logo" src="https://github.com/user-attachments/assets/8c362c2e-cafe-4f06-89fe-ec89a94a14d1" />
+
 Recently, I watched Moneyball for the first time, and I wonder why I never watched it sooner. Baseball is not my favorite sport, but I knew that stats and analytics has transformed other sports as well, including basketball. It’s a dream of mine to work for my hometown team, the San Antonio Spurs, one day. While I never played basketball outside of recreational leagues, I know I can still apply my statistical and mathematical knowledge to be of value to any team.
 
 In this project, I practiced my data visualization skills on the most recent NBA season’s data. While these aggregations and summaries are a far cry from the predictive models and sabermetrics that pro team data professionals use, they’re at least a solid stepping stone into that world. I had a lot of fun diving into the data, and I hope you will too!
