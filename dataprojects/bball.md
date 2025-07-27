@@ -56,7 +56,7 @@ Lastly, if someone knew nothing about basketball, this chart could help them mak
 
 I created two charts that dealth with team scoring distribution - one showed the team's season total point count by player, and the other by age group. I used a stacked bar chart where height denoted points, columns represented teams, and section sof the bars denoted players. I added a text label to see some of the big contributors off the bar. Now, NBA rosters have around 15 people, so things got a bit crowded, and the result was a chart that is not really ideal for that reason, but it was still interesting to see:
 
-<img width="1641" height="786" alt="image" src="https://github.com/user-attachments/assets/770a5f72-50c8-4f6d-8859-81a11e7b52f6" />
+<img src="https://github.com/user-attachments/assets/770a5f72-50c8-4f6d-8859-81a11e7b52f6" />
 
 There are way too many colors and there's only room for like seven names. But there is still insight to be gained. Our unicorn Jokić is in the spotlight again, making up a large section on the Nuggets' bar. One team that stood out to me was my very own San Antonio Spurs - no single bar took up a huge area, like we see for SGA and the Thunder. The distribution was fairly even, which could mean that the team didn't really have a designated scorer or go-to-guy (could be fair - despite having cornerstone and Rookie-of-the-Year Victor Wembanyama, the team is really young and building an identity), or they are really good at sharing the ball. In my limited watching of Spurs games this past season, I am more inclined to believe the former is the true, although I know our ball movement has improved.
 
