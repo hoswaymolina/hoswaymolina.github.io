@@ -2,7 +2,7 @@
 
 <img width="2400" height="497" alt="Tableau_Logo" src="https://github.com/user-attachments/assets/8c362c2e-cafe-4f06-89fe-ec89a94a14d1" />
 
-[**_Here is the Tableau Public link for this project._**](https://public.tableau.com/views/2024-2025NBASeasonPlayerStatSummary/24-25NBASeason?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
+[**_Here is the Tableau Public link for this project._**](https://public.tableau.com/views/2024-2025NBASeasonPlayerStatSummary/24-25NBASeason?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 Recently, I watched _Moneyball_ for the first time, and I wonder why I never watched it sooner. Baseball is not my favorite sport, but I knew that stats and analytics has transformed other sports as well, including basketball. It’s a dream of mine to work for my hometown team, the San Antonio Spurs, one day. While I never played basketball outside of recreational leagues, I know I can still apply my statistical and mathematical knowledge to be of value to any team.
 
