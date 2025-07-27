@@ -2,7 +2,9 @@
 
 <img width="2400" height="497" alt="Tableau_Logo" src="https://github.com/user-attachments/assets/8c362c2e-cafe-4f06-89fe-ec89a94a14d1" />
 
-Recently, I watched Moneyball for the first time, and I wonder why I never watched it sooner. Baseball is not my favorite sport, but I knew that stats and analytics has transformed other sports as well, including basketball. It’s a dream of mine to work for my hometown team, the San Antonio Spurs, one day. While I never played basketball outside of recreational leagues, I know I can still apply my statistical and mathematical knowledge to be of value to any team.
+[**_Here is the Tableau Public link for this project._**](https://public.tableau.com/views/2024-2025NBASeasonPlayerStatSummary/24-25NBASeason?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
+
+Recently, I watched _Moneyball_ for the first time, and I wonder why I never watched it sooner. Baseball is not my favorite sport, but I knew that stats and analytics has transformed other sports as well, including basketball. It’s a dream of mine to work for my hometown team, the San Antonio Spurs, one day. While I never played basketball outside of recreational leagues, I know I can still apply my statistical and mathematical knowledge to be of value to any team.
 
 In this project, I practiced my data visualization skills on the most recent NBA season’s data. While these aggregations and summaries are a far cry from the predictive models and sabermetrics that pro team data professionals use, they’re at least a solid stepping stone into that world. I had a lot of fun diving into the data, and I hope you will too!
 
@@ -70,3 +72,16 @@ The last chart I made was a treemap emphasizing assist counts for players. I ass
 
 <img width="1652" height="800" alt="image" src="https://github.com/user-attachments/assets/ed571095-63e5-463f-9d82-4f62d9331e1b" />
 
+I highlighted Giannis' square in the power forward section as yet another example of the blurring lines between the positions. Historically, the power forward position has not been known for playmaking ability, but players like Giannis have grown to carry that load in today's game. Besides that, players like Jokić, LeBron, D-Book, and Trae Young (the league leader in Assists) stand out in their positions as playmakers.
+
+## Tableau Story
+
+I organized the charts into Tableau Story mode, so if you would like to check out the full visualization, check out this [link](https://public.tableau.com/views/2024-2025NBASeasonPlayerStatSummary/24-25NBASeason?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
+
+## Takeaways
+
+This project has definitely inspired me to keep learning about sports analytics. Everyone knows that Jokić is super dominant, and that Trae Young is an incredible playmaker, but getting to see those things quantified and the degree to which they are true gave me a deeper respect for their game. I love seeing my teams win, and I know that using data and insights like this can really make a difference for a team, as we see in stories like _Moneyball_. I also got to see how versatile Tableau is - it's an incredible BI tool, and I can't wait to keep building my skills in it!
+
+## Thanks for reading!
+
+As always, I'd like to thank you so much for reading about my projects! Feel free to reach out and connect with me on [LinkedIn](https://www.linkedin.com/in/hoswaymolina/). Any input and advice is appreciated!
