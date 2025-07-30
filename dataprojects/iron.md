@@ -18,4 +18,13 @@ To take a look at some of the columns while practicing some other methods, I cal
 
 <img width="861" height="337" alt="image" src="https://github.com/user-attachments/assets/7307ad71-0ae4-46b8-89d6-faaa5886beff" />
 
-### 
+### Cleaning
+
+Since I was going to deal with dates, it was worth checking which variable type the date column was casted as. Since I'm new to Python, I also decided to see what happens when you check the data types for the data frame and the column:
+
+<img width="397" height="239" alt="image" src="https://github.com/user-attachments/assets/514a0576-e103-435f-b1a0-9053e71c6ac5" />
+
+We see that the dates were casted as strings. I fixed this with the to_datetime method:
+
+<img width="488" height="175" alt="image" src="https://github.com/user-attachments/assets/6e2b43c7-7f50-4d1d-9324-62953dc317e0" />
+
