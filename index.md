@@ -6,7 +6,6 @@
 
 ---
 ## Data Analytics
-[iron](/dataprojects/iron.md)
 
 ---
 ### [Sports Analytics: A Glance at the 2024-2025 NBA Season using Tableau](/dataprojects/bball.md)
