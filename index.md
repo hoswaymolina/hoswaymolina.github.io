@@ -7,6 +7,10 @@
 ---
 ## Data Analytics
 
+### [Modern Mining Processes: Examining Iron Refinement with Python](/dataprojects/iron.md)
+[![dataset-cover](https://github.com/user-attachments/assets/082ea81b-c72f-449f-bc47-5d8925e06d49)](dataprojects/iron.md)
+Check out my foray into the data analytics side of Python using real-life iron refinement plant data.
+
 ---
 ### [Sports Analytics: A Glance at the 2024-2025 NBA Season using Tableau](/dataprojects/bball.md)
 [![NBA_basketball,_Raptors_in_Phoenix](https://github.com/user-attachments/assets/350b6ee2-de24-4ba5-b9f3-9fde4e907af8)](/dataprojects/bball.md)
