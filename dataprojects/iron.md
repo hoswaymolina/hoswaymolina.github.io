@@ -4,7 +4,7 @@
 
 What do you think of when you hear the word "iron"? I usually think about strength, swords, and the medieval or classical eras. Of course, iron is a very important metal to us today - we use it in steel and various other products. As part of Avery Smith's Data Analytics Accelerator, I did some basic descriptive statistics and analysis on a real-life dataset from an iron plant. I have no knowledge of chemicals or manufacturing, so I was definitely out of my comfort zone for this project, but it helped that I was using Python, which is a really fascinating tool that I have gotten some experience with, particularly in a class I took in undergrad. In that course, I wrote short scripts to create algorithms that solved math problems - I wrote a program for Newton's method, a large prime number generator, and even made a caricature of myself using Tkinter.
 
-In this project, however, I learned about the data anlaytics side of Python. I got to use packages like pandas and seaborn for the first time, which was exciting. Keep reading this to see my learning journey in Python!
+In this project, however, I learned about the data anlaytics side of Python. I got to use packages like pandas and seaborn for the first time, which was exciting. I pretended that I was an iron manufacturing data analyst who was answering questions from my boss, including one about an interesting anomaly in June. Keep reading this to see my learning journey in Python!
 
 ## The Dataset
 
