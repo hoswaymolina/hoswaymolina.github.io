@@ -36,4 +36,21 @@ It is useful to have some classic data aggregations, and I have learned that it 
 
 <img width="715" height="420" alt="image" src="https://github.com/user-attachments/assets/a7035b91-5fc9-40e4-a24f-b7b52565d81a" />
 
-We get standard deviations, percentiles, means, mins, and maxes. 
+We get standard deviations, percentiles, means, mins, and maxes. It's a great table to get on overview on the effectiveness of the plant.
+
+I wanted to get an overview for the date ranges. So, I used the max and min methods to get the latest and earliest dates represented in the dataset:
+
+<img width="493" height="255" alt="image" src="https://github.com/user-attachments/assets/b6318307-8b7a-4e6b-8805-ee25ad77e670" />
+
+Now, I was set up to answer the main question, which was to check on the "interesting" date that my boss mentioned. First, I wanted to create a table subset that only included the date of interest (June 1st, 2017) using a boolean mask. Then, I only wanted to include the important columns, which I was told were date, iron concentrate percentage, silica concentrate percentage, ore pulp pH, and the flotation level on column 5. I simply created a list with each of those column title names. I created a new dataframe, which was just the june dataframe with only the important columns, and then returned this new dataframe:
+
+<img width="1202" height="612" alt="image" src="https://github.com/user-attachments/assets/f7d3e63f-4c1a-4b41-bd46-338e069ebc13" />
+
+Full transparency, I am not very familiar with iron refinement, so it's hard for me to tell if anything's off, BUT this table would be useful for anyone who DOES know what they're doing in terms of iron refinement. At aany rate, Python can be really useful for data visualization with packages like seaborn, which is exactly what I tried next.
+
+### Visualization w/ Seaborn
+
+To get a better feel for any "anomalies" that may be present, I simply used the effective and succinct pairplot method:
+
+<img width="986" height="986" alt="Untitled" src="https://github.com/user-attachments/assets/eab1db9b-e6b2-4a16-af63-baa755cdb67e" />
+
