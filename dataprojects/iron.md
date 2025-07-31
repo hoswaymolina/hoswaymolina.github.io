@@ -1,5 +1,11 @@
 # Iron
 
+<img width="599" height="432" alt="Untitled" src="https://github.com/user-attachments/assets/4b9d02a5-9817-40c8-b662-fa210eed0e78" />
+
+What do you think of when you hear the word "iron"? I usually think about strength, swords, and the medieval or classical eras. Of course, iron is a very important metal to us today - we use it in steel and various other products. As part of Avery Smith's Data Analytics Accelerator, I did some basic descriptive statistics and analysis on a real-life dataset from an iron plant. I have no knowledge of chemicals or manufacturing, so I was definitely out of my comfort zone for this project, but it helped that I was using Python, which is a really fascinating tool that I have gotten some experience with, particularly in a class I took in undergrad. In that course, I wrote short scripts to create algorithms that solved math problems - I wrote a program for Newton's method, a large prime number generator, and even made a caricature of myself using Tkinter.
+
+In this project, however, I learned about the data anlaytics side of Python. I got to use packages like pandas and seaborn for the first time, which was exciting. Keep reading this to see my learning journey in Python!
+
 ## The Dataset
 
 The dataset is from a real-world manufacturing plant; it can be found [here](https://www.kaggle.com/datasets/edumagalhaes/quality-prediction-in-a-mining-process?resource=download).
@@ -63,3 +69,11 @@ Last of all, I used the line chart feature in seaborn. The boss wanted to see ho
 <img width="604" height="432" alt="Untitled" src="https://github.com/user-attachments/assets/dc9571d9-f199-4e3b-90d1-e73bcd45bea4" />
 
 In these charts, we can definitely see a huge dip at June 1st. It can help our boss and stakeholders to see this anomaly visually, and most importantly, now we know we weren't totally crazy not to see anything weird before. We just weren't looking at the right graph!
+
+## Takeaways
+
+Data analytics is really important for large, expensive, and potentially dangerous operations like mining for iron. It was a great experience to see how someone in a manufacturing analytics position would use a tool like python to get the job done. While this is a very surface-level introduction and exploration of Python's data analytics capabilities, I do understand Avery Smith's view that Python is like a jack-of-all-trades, master of none in data - SQL makes filtering columns and rows easier, while Tableau is much better for making and customizing visualizations. However, I know there are plenty of situations where Python shines.
+
+## Thanks for Reading!
+
+Thank you so much for going on this journey with me! Please connect with me on [LinkedIn](https://www.linkedin.com/in/hoswaymolina), and I'd be happy to hear any feedback you may have!
