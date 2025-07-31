@@ -56,7 +56,10 @@ To get a better feel for any "anomalies" that may be present, I simply used the 
 
 As far as the relationships go, there isn't much sticking out, and that's okay - it's usually just as helpful to know that two variables are not related as it is to know that they are related.
 
-Last of all, I used the line chart feature in seaborn. The boss wanted to see how iron concentrate percentages changed throughout the day. He also wanted to see the same for other important columns. I uesd this opportunity to also practice for loops: I had python go through the important column list and provide a lineplot for each one. I actually recreated the list to exclude date, since that wasn't relevant here. The result was this:
+Last of all, I used the line chart feature in seaborn. The boss wanted to see how iron concentrate percentages changed throughout the day. He also wanted to see the same for other important columns. I uesd this opportunity to also practice for loops: I had python go through the important column list and provide a lineplot for each one. I actually recreated the list to exclude date, since that wasn't relevant here. Here are some of the plots that came out:
 
 <img width="604" height="432" alt="Untitled" src="https://github.com/user-attachments/assets/7b3b8dd4-cf05-4368-ae4a-94ae0dff04db" />
 
+<img width="604" height="432" alt="Untitled" src="https://github.com/user-attachments/assets/dc9571d9-f199-4e3b-90d1-e73bcd45bea4" />
+
+In these charts, we can definitely see a huge dip at June 1st. It can help our boss and stakeholders to see this anomaly visually, and most importantly, now we know we weren't totally crazy not to see anything weird before. We just weren't looking at the right graph!
