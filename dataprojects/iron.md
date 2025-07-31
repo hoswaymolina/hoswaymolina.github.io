@@ -50,7 +50,13 @@ Full transparency, I am not very familiar with iron refinement, so it's hard for
 
 ### Visualization w/ Seaborn
 
-To get a better feel for any "anomalies" that may be present, I simply used the effective and succinct pairplot method:
+To get a better feel for any "anomalies" that may be present, I simply used the effective and succinct pairplot method for our new important column June table:
 
 <img width="986" height="986" alt="Untitled" src="https://github.com/user-attachments/assets/eab1db9b-e6b2-4a16-af63-baa755cdb67e" />
+
+As far as the relationships go, there isn't much sticking out, and that's okay - it's usually just as helpful to know that two variables are not related as it is to know that they are related.
+
+Last of all, I used the line chart feature in seaborn. The boss wanted to see how iron concentrate percentages changed throughout the day. He also wanted to see the same for other important columns. I uesd this opportunity to also practice for loops: I had python go through the important column list and provide a lineplot for each one. I actually recreated the list to exclude date, since that wasn't relevant here. The result was this:
+
+<img width="604" height="432" alt="Untitled" src="https://github.com/user-attachments/assets/7b3b8dd4-cf05-4368-ae4a-94ae0dff04db" />
 
