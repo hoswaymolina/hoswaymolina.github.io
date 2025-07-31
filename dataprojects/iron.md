@@ -1,4 +1,4 @@
-# Iron
+# Modern Mining Processes: Examining Iron Refinement with Python
 
 <img alt="Untitled" src="https://github.com/user-attachments/assets/4b9d02a5-9817-40c8-b662-fa210eed0e78" />
 
