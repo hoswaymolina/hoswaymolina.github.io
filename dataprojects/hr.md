@@ -1,6 +1,10 @@
 # People Analytics
 
-In this project, I took on the role of "People Data Analyst" for a fictional HR department. My job is to explore issues including accusations of ageism.
+![how-hr-increases-sales-and-revenue](https://github.com/user-attachments/assets/2ddccfa9-82e0-43f0-a6b9-58d1f16c69fc)
+
+My first exposure to a People Analyst was seeing [Bill Yost](https://www.linkedin.com/in/billyost/)'s LinkedIn activity. As far as I've seen, he doesn't post a lot specifically about people analytics, and mostly just posts really funny content, including satire. Anyway, I knew that data analytics was relevant to pretty much any area of a company, but seeing HR analytics being called "People Analytics" was pretty cool.
+
+In this project, I took on the role of "People Data Analyst" for a fictional HR department. My job is to explore issues including accusations of ageism. In 
 
 ## The Dataset
 
@@ -69,7 +73,36 @@ t.test(yes_id, no_id)
 
 <img alt="image" src="https://github.com/user-attachments/assets/6408485e-a112-4eae-be88-1dd374ab3e02" />
 
-<img width="697" height="209" alt="image" src="https://github.com/user-attachments/assets/ec9510be-94a5-4363-90b3-3d765bb0eef6" />
+<img alt="image" src="https://github.com/user-attachments/assets/ec9510be-94a5-4363-90b3-3d765bb0eef6" />
 
 With a very high p-value, we see that there was not statistically significant difference in layoffs by employee number. This should put to bed any suspicion that newer employees were targeted in the layoffs.
 
+### Linear Regression
+
+My last task was to predict monthly income based on the age of an employee. To do this, I employed basic linear regression model using the convenient lm function in R:
+
+```r
+model1 = lm(MonthlyIncome ~ Age, data = hrdata)
+summary(model1)
+```
+
+<img alt="image" src="https://github.com/user-attachments/assets/a0d6a984-63ca-4dcb-86db-5eb63531c434" />
+
+We have a small p-value, so our R-squared value of about 25% means that about 25% of the variance in monthly income can be explained with our model.
+
+I made one more regression model, this time using another variable that is likely a strong predictor of monthly income - total years worked:
+
+```r
+model2 = lm(MonthlyIncome ~ Age + TotalWorkingYears, data = hrdata)
+summary(model2)
+```
+
+<img alt="image" src="https://github.com/user-attachments/assets/9c7a5852-35cd-4c11-b7e3-a2e1dbd38fb2" />
+
+This model is even better - we still have a small p-value, and this time our R-squared value is a strong .599! We can conclude that while age is a somewhat loose predictor of monthly income, combining age with experience is a much better predictor.
+
+## Takeaways
+
+The main concerns of our employer here are averted - in terms of ageism, there was actually evidence for the opposite case - younger employees were more likely to be fired than older ones. In terms of employee tenure, we see that there was no significant difference in firing rates. While we got results that are significant for our boss, we also used some linear models that may be more useful for prospective employees - a prospective employee could use the models to predict their income after they spend a certain number of years at the company. Or, the HR division can use it to provide fair salary adjustments and negotiation for new employees. All things considered, the insight gained from this analysis is incredibly useful.
+
+Avery Smith's description of Python as a Swiss army knife and R as a hatchet is very accurate, as seen in this project. R makes statistical analysis very simple and straightforward - the lines of code here are much shorter and concise, while Python makes things a bit clunkier.
