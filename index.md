@@ -6,7 +6,11 @@
 
 ---
 ## Data Analytics
+### [Analytics of Human Beings: Employee Statistics with R](/dataprojects/hr.md)
+[<img alt="image" src="https://github.com/user-attachments/assets/460ebea2-3837-48a4-b33b-43d2ab1adf7e" />](/dataprojects/hr.md)
+The statistical power of R is on full display in this People Analytics project.
 
+---
 ### [Modern Mining Processes: Examining Iron Refinement with Python](/dataprojects/iron.md)
 [![dataset-cover](https://github.com/user-attachments/assets/082ea81b-c72f-449f-bc47-5d8925e06d49)](dataprojects/iron.md)
 Check out my foray into the data analytics side of Python using real-life iron refinement plant data.
