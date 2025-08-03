@@ -5,3 +5,12 @@ In this project, I took on the role of "People Data Analyst" for a fictional HR 
 ## The Dataset
 
 The dataset was created by data scientists at IBM, and can be found [here](https://hoswaymolina.github.io/dataprojects/iron.html).
+
+## Analysis
+
+The first step was simply to import the data:
+
+```r
+hrdata <- read.csv("HR-Employee-Attrition.csv")
+```
+
