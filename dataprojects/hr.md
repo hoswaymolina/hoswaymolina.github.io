@@ -4,7 +4,13 @@
 
 My first exposure to a People Analyst was seeing [Bill Yost](https://www.linkedin.com/in/billyost/)'s LinkedIn activity. As far as I've seen, he doesn't post a lot specifically about people analytics, and mostly just posts really funny content, including satire. Anyway, I knew that data analytics was relevant to pretty much any area of a company, but seeing HR analytics being called "People Analytics" was pretty cool.
 
-In this project, I took on the role of "People Data Analyst" for a fictional HR department. My job is to explore issues including accusations of ageism. In 
+In this project, I took on the role of "People Data Analyst" for a fictional HR department. My tool was R, which has become the third programming language I have used (after Python and SQL, in that order). I've learned that it's a really powerful and awesome tool to have in one's belt. My job was to explore issues including accusations of ageism in layoffs. In my analysis, I found that:
+
+- Layoffs were actually more likely for younger employees
+- There was no statistically significant difference between firing rates for more recent or more tenured employees
+- Age and years worked account for approximately 60% of variance in monthly income
+
+As usual, read below to retrace my steps!
 
 ## The Dataset
 
@@ -106,3 +112,7 @@ This model is even better - we still have a small p-value, and this time our R-s
 The main concerns of our employer here are averted - in terms of ageism, there was actually evidence for the opposite case - younger employees were more likely to be fired than older ones. In terms of employee tenure, we see that there was no significant difference in firing rates. While we got results that are significant for our boss, we also used some linear models that may be more useful for prospective employees - a prospective employee could use the models to predict their income after they spend a certain number of years at the company. Or, the HR division can use it to provide fair salary adjustments and negotiation for new employees. All things considered, the insight gained from this analysis is incredibly useful.
 
 Avery Smith's description of Python as a Swiss army knife and R as a hatchet is very accurate, as seen in this project. R makes statistical analysis very simple and straightforward - the lines of code here are much shorter and concise, while Python makes things a bit clunkier.
+
+# Let's Connect!
+
+Thanks for reading my project! Please connect on [LinkedIn](https://www.linkedin.com/in/hoswaymolina) and send any feedback, or just say hi!
