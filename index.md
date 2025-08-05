@@ -6,6 +6,12 @@
 
 ---
 ## Data Analytics
+
+### [Supply Chain Analytics with Power BI](/dataprojects/supply.md)
+[<img alt="image" src="https://github.com/user-attachments/assets/950bcfce-8f3d-4399-8f52-b244b6c2253b" />](/dataprojects/supply.md)
+I helped a Supply Chain company solve business problems by making an interactive dashboard in Power BI!
+
+---
 ### [Analytics of Human Beings: Employee Statistics with R](/dataprojects/hr.md)
 [<img alt="image" src="https://github.com/user-attachments/assets/460ebea2-3837-48a4-b33b-43d2ab1adf7e" />](/dataprojects/hr.md)
 The statistical power of R is on full display in this People Analytics project.
