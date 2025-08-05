@@ -19,9 +19,6 @@ What ensued was the dashboard you will see me share in the video!
 
 The dataset is real-life data from DataCo Global. It can be found [here](https://data.mendeley.com/datasets/8gx2fvg2k6/5).
 
-Here's my video!
+Click [here](https://www.loom.com/share/6a1d1329ba9945049eb4c64dd6783009?sid=ff312508-347b-44ae-8607-3806b7452950) to see my video share!
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/6a1d1329ba9945049eb4c64dd6783009?sid=37dc695f-881b-4b21-a03b-fbccd9bff9a1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-
-
-
+<img alt="image" src="https://github.com/user-attachments/assets/bca16d38-c354-4e5e-8136-3113bd06b45b" />
