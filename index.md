@@ -17,7 +17,7 @@ Check out my foray into the data analytics side of Python using real-life iron r
 
 ---
 ### [Sports Analytics: A Glance at the 2024-2025 NBA Season using Tableau](/dataprojects/bball.md)
-[(https://github.com/user-attachments/assets/350b6ee2-de24-4ba5-b9f3-9fde4e907af8)](/dataprojects/bball.md)
+[![NBA_basketball,_Raptors_in_Phoenix](https://github.com/user-attachments/assets/350b6ee2-de24-4ba5-b9f3-9fde4e907af8)](/dataprojects/bball.md)
 My love for sports and Tableau come together in this basketball analytics project, give it a look!
 
 ---
