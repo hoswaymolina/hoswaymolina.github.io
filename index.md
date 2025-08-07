@@ -58,4 +58,4 @@ In this case study from Data Analytics Accelerator, I was prompted to analyze th
 My senior year at Texas Tech, I took a mathematical modeling class in which each group used real-world, local data to create feral cat population models. In this project, I worked with Oladepo Gbemisola and Ryan Covington to produce equations and predictions based on the Trap, Neuter, and Return rates adopted by local shelters. My focus was on researching reasonable equation parameters and cleaning/visualizing over 8000 rows of local feral cat data in Microsoft Excel. The dataset can be found [here](files/allcats-withjuly.csv). The final Google Slides presentation can be found [here](files/JoRG_Long.pdf).
 
 ---
-[<img src="images/Mamu.avif?raw=true"/>](https://www.youtube.com/watch?v=FCRrA0nRvb0&pp=0gcJCfwAo7VqN5tD)
+[<img width="50" height="50" src="images/Mamu.avif?raw=true"/>](https://www.youtube.com/watch?v=FCRrA0nRvb0&pp=0gcJCfwAo7VqN5tD)
