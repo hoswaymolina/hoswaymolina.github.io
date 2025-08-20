@@ -24,8 +24,10 @@ Crimes are organized by **incidents** at the hightest level, each with a unique 
 
 To help explain these relationships, [a very helpful diagram](/files/nibrs_diagram.pdf) was included in the zip file. I suggest reviewing it briefly before diving into my analysis - it helps explain why I had to juggle primary and foreign keys a lot in my analysis.
 
-## Analysis
+### Data Dictionary
 
 In case you want more detail about the tables and columns that I access in the queries below, here is an [NIBRS Data Dictionary](/files/NIBRS_DataDictionary.pdf) that is available on the website!
+
+## Analysis
 
 ### 
