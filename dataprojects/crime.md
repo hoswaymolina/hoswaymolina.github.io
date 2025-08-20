@@ -232,4 +232,4 @@ The last chart identified communities that struggled with violent crime, and I w
 
 ### Methodology
 
-The first thing to point out is that biased offenses, or hate crimes, are sometimes really easy to identify (e.g., vandalism with slurs), but are mostly not so easy. The FBI defines hate crimes as "criminal offenses that were motivated, in whole or in part, by the offender’s bias against the victim’s race/ethnicity/ancestry, gender, gender identity, religion, disability, or sexual orientation, and were committed against persons, property, or society" ([Hate Crime Methodology](/files/hate crime methodology.pdf))
+The first thing to point out is that biased offenses, or hate crimes, are sometimes really easy to identify (e.g., vandalism with slurs), but are mostly not so easy. The FBI defines hate crimes as "criminal offenses that were motivated, in whole or in part, by the offender’s bias against the victim’s race/ethnicity/ancestry, gender, gender identity, religion, disability, or sexual orientation, and were committed against persons, property, or society" ([Hate Crime Methodology](/files/hate_crime_methodology.pdf))
