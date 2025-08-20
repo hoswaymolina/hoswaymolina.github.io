@@ -308,4 +308,34 @@ I could finally import this table into Tableau:
 
 <img alt="image" src="https://github.com/user-attachments/assets/ec2983c2-5347-4c24-9378-a2f1ed22773a" />
 
-Darker counties
+This map doesn't account for low populations or single offense counties. But I also wanted the filter to just have a filter option and a not filter option (not an "all counties", "excluded counties", and "included counties" option like the traditional filter method would have given). So I implemented a more unconventional method for the filter. First, I made a parameter with two string options: Filter Applied, and No Filter. I then showed the parameter control so that a viewer can toggle it. Next, I made a calculated field. This field is a Boolean, checking if the population and offense count meet the threshold if the filter applied parameter is on:
+
+<img alt="image" src="https://github.com/user-attachments/assets/02d084f4-cd65-4f50-9a81-41aca3c697fb" />
+
+If the filter is off, all the values are "True". If the filter is on, only the counties that meet the threshold are "True":
+
+<img alt="Screenshot 2025-08-20 165100" src="https://github.com/user-attachments/assets/4149e0d6-19e1-4a42-80cc-f062679f2e2e" />
+
+Now the choropleth highlights certain counties with the filter off (Armstrong County way up north, shown below), but the county doesn't even show up when the filter is on. The county has a population of less than 2,000 and only one hate crime, so it is put aside by the filter as not having enough data or a sample that is large enough. To make sure this issue is highlighted, I included the county group population and offense count in the tooltip, which is shown below for Armstrong County (filter off):
+
+<img alt="image" src="https://github.com/user-attachments/assets/77e99c7f-e75e-49e6-89ff-1fba69c35668" />
+
+I encourage you to check out my dashboard on Tableau Public (in full-screen mode) to play with the filter and explore the counties yourself!
+
+### The Dashboard
+
+My dashboard is [published on Tableau Public](https://public.tableau.com/shared/S3R9BHNFX?:display_count=n&:origin=viz_share_link), and I encourage you to look at it there on full-screen so you can use the population sliders and filters, but here's a screenshot of the dashboard:
+
+<img alt="image" src="https://github.com/user-attachments/assets/bf9cda17-77da-405d-a240-b60b0fd9404f" />
+
+## Takeaways
+
+These charts and insights can directly assist law enforcement and are actionable. One of the main learning points for law enforcement in Texas is the prevalence of hate crimes in rural areas. This project identifies specific counties of interest. Even after accounting for low population, rural counties tend to take the lead in per capita hate crime counts. Law enforcement in these areas should work with locals and federal officials to ensure not only that education and community is fostered to prevent bias from happening in the first place, but also to explore preventative techniques like community patrols and installing up-to-date surveillance eqeuipment.
+
+Similarly, the scatter plot shows several counties that struggle with violent crime rates. Cooperation between adjacent agencies (such as Humble and Houston/Harris County) is crucial to solving those issues.
+
+I ran into many issues during this project, most of which happened before I was even able to write a query. I worked through the loading process over 3 days until I finally figured it out. Formatting the dashboard and figuring out how to navigate overlapping counties and agencies were also sources of headaches. But it wasn't anything that my brain, my community, the internet, or ChatGPT couldn't help me with. My skills in all three of SQL, Excel, and Tableau grew a great deal, and I am super pleased with how this project turned out. I'm excited to keep learning and refining my skills!
+
+# Thanks for Reading!
+
+Compared to my other projects up to this point, this one is a LONG read. If you read even only part of it, thanks for taking a look! I appreciate any and all feedback. Connect with me on [LinkedIn](https://hoswaymolina.github.io/) and let me know what you thought! Have a great day!
