@@ -361,4 +361,4 @@ I ran into many issues during this project, most of which happened before I was 
 
 # Thanks for Reading!
 
-Compared to my other projects up to this point, this one is a LONG read. If you read even only part of it, thanks for taking a look! I appreciate any and all feedback. Connect with me on [LinkedIn](https://hoswaymolina.github.io/) and let me know what you thought! Have a great day!
+Compared to my other projects up to this point, this one is a LONG read. If you read even only part of it, thanks for taking a look! I appreciate any and all feedback. Connect with me on [LinkedIn](https://www.linkedin.com/in/hoswaymolina) and let me know what you thought! Have a great day!
