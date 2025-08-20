@@ -30,4 +30,42 @@ In case you want more detail about the tables and columns that I access in the q
 
 ## Analysis
 
-### 
+### Number of hate crimes by bias
+
+One of the first things I did was to organize the crimes by bias type. First, I wrote a query returning the total number of biased offenses that occurred in total. I linked the offenses table with the bias motivation table and counted offenses ids where the bias was not "unknown" or "none":
+
+```sql
+SELECT 
+    COUNT(o.offense_id) AS num_biased_offenses
+FROM
+    nibrs_offense AS o
+        JOIN
+    nibrs_bias_motivation AS nb ON o.offense_id = nb.offense_id
+WHERE
+    nb.bias_id != '88'
+        AND nb.bias_id != '99';
+```
+
+A single cell was returned showing 479 hate crimes in Texas for 2024. I verified this number with the hate crime table spreadsheet available on the CDE website, which also showed 479 offenses.
+
+I then grouped the query by bias. Since the bias motivation table only had the bias id (NOT the name of the bias), I decided to link a third table - the bias list table - so I could return the `bias_desc` column instead of a number. That way, anyone seeing the result could see the bias type without having to go back and forth between the bias list table and the query result:
+
+```sql
+SELECT 
+    COUNT(ni.offense_id) AS num_biased_offenses,
+    nl.bias_desc AS bias
+FROM
+    nibrs_offense AS ni
+        JOIN
+    nibrs_bias_motivation AS nb ON ni.offense_id = nb.offense_id
+        JOIN
+    nibrs_bias_list AS nl ON nb.bias_id = nl.bias_id
+WHERE
+    nb.bias_id != '88'
+        AND nb.bias_id != '99'
+GROUP BY bias
+ORDER BY num_biased_offenses DESC;
+```
+
+<img alt="image" src="https://github.com/user-attachments/assets/41ad0dc3-e951-415b-bacc-779b93af0546" />
+
