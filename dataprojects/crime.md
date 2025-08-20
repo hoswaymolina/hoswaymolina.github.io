@@ -20,6 +20,12 @@ Here's a brief description of the data in the FBI's own words (from the readme):
 >
 > For detailed information about all the fields provided in NIBRS and how they are collected and presented, please refer to the [official NIBRS documentation](https://ucr.fbi.gov/nibrs/nibrs-user-manual).
 
-Crimes are organized by **incidents** at the hightest level. Each incident can have multiple **offenses**, which are essentially separate crimes that occurred in an incident. Each incident can be explored via tables that show administrative info (e.g., whether an offender was cleared exceptionally), property that was lost/damaged, the victims involved, offender demographics, and arrestee information. Everything from the date and hour the incident occurred to the victim's ethnicity to the measure of drugs possessed is contained in the files.
+Crimes are organized by **incidents** at the hightest level, each with a unique id. Each incident can have multiple **offenses**, which are essentially separate crimes that occurred in an incident. They also have unique ids. So, there may be multiple offense ids associated with a particular incident. Each incident can be explored via tables that show administrative info (e.g., whether an offender was cleared exceptionally), property that was lost/damaged, the victims involved, offender demographics, and arrestee information. Everything from the date and hour the incident occurred to the victim's ethnicity to the measure of drugs possessed is contained in the files.
 
-To help explain these relationships, [a very helpful diagram](/files/nibrs_diagram.pdf) was included in the zip file. There is so much detail included, so I had to pick a focus or else I would spend my entire life exploring it. I chose to focus on hate crime data because I 
+To help explain these relationships, [a very helpful diagram](/files/nibrs_diagram.pdf) was included in the zip file. I suggest reviewing it briefly before diving into my analysis - it helps explain why I had to juggle primary and foreign keys a lot in my analysis.
+
+## Analysis
+
+In case you want more detail about the tables and columns that I access in the queries below, here is an [NIBRS Data Dictionary](/files/NIBRS_DataDictionary.pdf) that is available on the website!
+
+### 
