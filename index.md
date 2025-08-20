@@ -8,7 +8,8 @@
 ## Data Analytics
 
 ### [A Dive Into FBI Crime Data (Excel, SQL, Tableau)](/dataprojects/crime.md)
-
+[<img src="images/crime_thumbnail.png?raw=true"/>](/dataprojects/crime.md)
+I got to practice Excel, SQL, and Tableau (and make a cool dashboard) in this fascinating crime data analytics project!
 
 ---
 ### [Supply Chain Analytics with Power BI](/dataprojects/supply.md)
