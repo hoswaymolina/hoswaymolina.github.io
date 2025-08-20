@@ -1,8 +1,16 @@
-# Violent and Hate Crime in Texas
+# A Dive Into FBI Crime Data (Excel, SQL, Tableau)
 
-Oh yeah
+<img width="426" height="438" alt="FBI_Badge_2" src="https://github.com/user-attachments/assets/ea0043fd-7696-4fdd-a42c-d1a1a8c2196c" />
+
+***To interact with the dashboard on Tableau Public, go [here](https://public.tableau.com/shared/S3R9BHNFX?:display_count=n&:origin=viz_share_link)!***
+
+Data is powerful. No one can deny the fact that analytics, statistics, and the scientific method have transformed the way we make decisions. It helps companies make more money. It helps sports teams win more. It can also help make the world a better place.
+
+When I decided to dive into data analytics, I was worried because I didn't want to simply calculate profit, track KPIs, and look at sales numbers. I wanted to be in a field where I knew I was helping people. You can absolutely help people, directly or indirectly, by calculating profit, tracking KPIs, and looking at sales numbers, but doing analytics in certain industries allows for a more tangible way to impact lives. One of those fields is crime-fighting.
 
 ## Why this project?
+
+In this project, I chose a topic in a field that interests me deeply - crime. There is a lot of crime data available for public use, but I decided to focus on violent and hate crimes since these are particularly appalling and terrible. I'm glad to know many friends across racial, ethnic, and national lines, so it hurts me to see groups of people discounted and dehumanized in the form of hate crimes. I hope this project can move the needle even just a little bit in raising awareness and fighting bias of every kind!
 
 ## The Data
 
@@ -29,6 +37,21 @@ To help explain these relationships, [a very helpful diagram](/files/nibrs_diagr
 In case you want more detail about the tables and columns that I access in the queries below, here is an [NIBRS Data Dictionary](/files/NIBRS_DataDictionary.pdf) that is available on the website!
 
 ### Loading the Data
+
+Loading the 40+ csv files into MySQL was a bit of a hassle. The load scripts were written for PostgreSQL, so the first thing I tried was to import each csv file using the import wizard. Some files were too big for this to work. They would start importing, but the progress bar would never fill up. So I would cancel the upload, but then see that the table showed up. I thought the issue was just a progress bar glitch, so I would import all these tables thinking that they loaded correctly. When I started querying the data, however, I realized that many were empty, and that things were not in fact loaded correctly.
+
+At this point, I realized I had to upload the tables manually. I was able to copy the portion of the .sql files that created the tables just fine, but I had to comb through the errors and find out which parts of the script were PostgreSQL-only. That took forever, only for there to be more loading errors. I decided that maybe I would be better off downloading PostgreSQL and loading it that way. But I was absolutely unprepared for the amount of packages and options I had. There was no way for me to figure out what I needed and didn't need, not at the hour of night that it was.
+
+I was very discouraged at this point, and almost changed topics or datasets. But I decided to take another crack at it the next day. With the help of ChatGPT, I was able to methodically diagnose the issues step by step. I ended up creating the tables just fine, but I would run the manual scripts for loading (`LOAD DATA INFILE`) and it would say it did not have the right permissions. I kept checking both the client and server side to make sure `LOAD DATA INFILE` was working, but it wouldn't budge. Finally, ChatGPT suggested that I run the load script I made from the terminal. I did this (as Administrator):
+
+<img alt="Screenshot 2025-08-15 171013" src="https://github.com/user-attachments/assets/72921ecd-a901-4803-b44a-e4690459d582" />
+
+
+...and what ensued were several minutes of waiting and suspense as the terminal executed each load command, some taking several minutes (these csv tables are HUGE!):
+
+<img alt="image" src="https://github.com/user-attachments/assets/45e1a032-a520-4d38-b66e-3c160b3745a5" />
+
+When the process finally ended, I wrote some queries, AND IT FINALLY WORKED!!! I was so happy that I didn't give up. I learned a lot about loading data and troubleshooting those few days - ask for help, start over with a clean slate (as many times as you need to), and never give up!
 
 ## Analysis
 
