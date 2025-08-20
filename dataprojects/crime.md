@@ -226,4 +226,10 @@ As the tooltip shows, Humble moved a bit closer to the trend line, while the oth
 
 ### Hate Crimes per Capita
 
-This last analysis 
+This last piece of analysis brings us back to hate crime. I love maps, especially choropleth maps (shaded maps), so since I was working with states and counties, I HAD to incorporate a map.
+
+The last chart identified communities that struggled with violent crime, and I wanted this map to show which areas struggled with hate crime. There were a lot of issues and considerations when developing this map, and there weren't a lot of time- and effort-efficient ways to implement it (at my current level of Tableau expertise, at least!), but I think it ended up doing a decent job at showing trends.
+
+### Methodology
+
+The first thing to point out is that biased offenses, or hate crimes, are sometimes really easy to identify (e.g., vandalism with slurs), but are mostly not so easy. The FBI defines hate crimes as "criminal offenses that were motivated, in whole or in part, by the offender’s bias against the victim’s race/ethnicity/ancestry, gender, gender identity, religion, disability, or sexual orientation, and were committed against persons, property, or society" ([Hate Crime Methodology]())
