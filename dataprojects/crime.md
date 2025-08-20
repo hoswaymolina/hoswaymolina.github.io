@@ -155,3 +155,75 @@ Here's the final chart:
 
 <img alt="image" src="https://github.com/user-attachments/assets/a46742a1-d88d-45cc-9ec1-4faf63f97a45" />
 
+Assault offenses make up the majority of hate crimes, while destruction and vandalism of property makes up a huge chunk as well. Using this information, departments can focus on ensuring there are effective surveillance technologies in strategic areas where vandalism or intimidation may occur.
+
+### Violent Crime
+
+In addition to biased crimes, I decided to incorporate agency data and determine counties and communities with proportionally high violent crime rates. In this analysis, I considered incidents instead of offenses mainly because the general public is more likely to be concerned with an *instance* of criminal activity as opposed to how many offenses were committed in a given interaction. This also made inflation of the numbers less likely, and ensured that MySQL wouldn't take forever to run my queries.
+
+Another important thing to note is what is meant by *agency*. Many (not all) law enforcement agencies in Texas opt in to the National Incident-Based Reporting System, which is run at the federal level (FBI). So, there are several counties and communities that are not represented in the data. Also, some agencies cover multiple counties instead of just one (i.e., cities that are on county borders). I decided to determine the incidents per capita by agency to account for differences in communities within the same county - for example, San Antonio PD has a per capita crime rate, but so does Windcrest PD. Both are in Bexar County. Bexar County also has an agency - this corresponds to areas in the county that are not in San Antonio OR Windcrest (e.g., unincorporated communities). So, there might be a really high per capita crime rate in the urban parts of San Antonio, but a much lower rate in Windcrest. Lumping both of these together in a county rate does not account for these differences. Finally, in my hate crime per capita analysis, I did use a county analysis for several reasons, so it made sense to use a different approach in this chart to compare (only as far as a comparison is logical).
+
+I started by looking at all incidents, not just violent ones. My goal was to produce a scatterplot with population and incident number to see the correlation and pick out agencies that had proportionally high or low rates. I removed agencies that covered a population of zero to prevent skewing in the scatter plot:
+
+```sql
+SELECT 
+    a.ucr_agency_name AS Agency,
+    a.population AS Population,
+    COUNT(ni.incident_id) AS Number_of_Incidents
+FROM
+    agencies AS a
+        JOIN
+    nibrs_incident AS ni ON a.agency_id = ni.agency_id
+WHERE
+    Population > 0
+GROUP BY Agency, Population
+ORDER BY Population DESC
+```
+
+<img alt="image" src="https://github.com/user-attachments/assets/27061479-e996-46df-9ceb-789e9cb203d5" />
+
+I imported the table into Tableau and made a scatter plot. The main issue: cities like Houston and San Antonio have huge populations compared to the smaller agencies, so the scale was pretty off:
+
+<img alt="image" src="https://github.com/user-attachments/assets/597b3116-4a98-447e-8dfb-011ee4c478d2" />
+
+My solution was to add a population filter slider so that a viewer could switch between viewing plots for large cities and small cities. This is the scatterplot scaled for agencies with a maximum population of 100,000:
+
+<img alt="image" src="https://github.com/user-attachments/assets/44d14f94-f9ff-4251-a5d3-c363aaf2f543" />
+
+This plot is much more interesting. Communities like Humble, Weslaco, and San Angelo stick out as more dangerous. But what kinds of crimes are happening in those places? Is it mainly just bad checks and white collar crimes (bad check is an actual offense in this data)? I found out by only including violent crimes. I had to join the offense type table and add to my `WHERE` clause. I asked MySQL to include only offenses in categories including homicide, sex offenses, and assault:
+
+```sql
+SELECT 
+    a.ucr_agency_name AS Agency,
+    a.population AS Population,
+    COUNT(offf.offense_id) AS Number_of_Crimes
+FROM
+    agencies AS a
+        JOIN
+    nibrs_incident AS ni ON a.agency_id = ni.agency_id
+		JOIN
+	nibrs_offense AS offf ON ni.incident_id = offf.incident_id
+		JOIN
+	nibrs_offense_type AS ot ON offf.offense_code = ot.offense_code
+WHERE Population > 0
+  AND (
+      ot.offense_category_name = 'Homicide Offenses'
+      OR ot.offense_category_name = 'Kidnapping/Abduction'
+      OR ot.offense_category_name = 'Assault Offenses'
+      OR ot.offense_category_name = 'Human Trafficking'
+      OR ot.offense_category_name = 'Sex Offenses'
+      OR ot.offense_category_name = 'Sex Offenses, Non-forcible'
+  )
+GROUP BY Agency, Population
+ORDER BY Number_of_Crimes DESC
+```
+
+A very similar but slightly different chart resulted:
+
+<img alt="image" src="https://github.com/user-attachments/assets/3248aed1-58e2-49f8-83b6-d21309f704bf" />
+
+As the tooltip shows, Humble moved a bit closer to the trend line, while the other two aforementioned communities remained as relative outliers. I included the population slider for viewer use. A hover over the trend line shows an R squared value of about 0.718, which is a very strong correlation as expected (more people = more crimes). This chart is a very simple yet effective one at determining which counties and agencies struggle the most with violent crime. Federal agencies and neighboring/overlapping jurisdictions can assist accordingly and help bring the numbers down.
+
+### Hate Crimes per Capita
+
+This last analysis 
