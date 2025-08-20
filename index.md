@@ -7,6 +7,10 @@
 ---
 ## Data Analytics
 
+### [A Dive Into FBI Crime Data (Excel, SQL, Tableau)](/dataprojects/crime.md)
+
+
+---
 ### [Supply Chain Analytics with Power BI](/dataprojects/supply.md)
 [<img alt="image" src="https://github.com/user-attachments/assets/950bcfce-8f3d-4399-8f52-b244b6c2253b" />](/dataprojects/supply.md)
 I helped a Supply Chain company solve business problems by making an interactive dashboard in Power BI!
