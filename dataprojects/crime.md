@@ -230,6 +230,82 @@ This last piece of analysis brings us back to hate crime. I love maps, especiall
 
 The last chart identified communities that struggled with violent crime, and I wanted this map to show which areas struggled with hate crime. There were a lot of issues and considerations when developing this map, and there weren't a lot of time- and effort-efficient ways to implement it (at my current level of Tableau expertise, at least!), but I think it ended up doing a decent job at showing trends.
 
+### Considerations
+
+The first thing to point out is that biased offenses, or hate crimes, are sometimes really easy to identify (e.g., vandalism with slurs), but are mostly not so easy. The FBI defines hate crimes as "criminal offenses that were motivated, in whole or in part, by the offender’s bias against the victim’s race/ethnicity/ancestry, gender, gender identity, religion, disability, or sexual orientation, and were committed against persons, property, or society" ([Hate Crime Methodology](/files/hate_crime_methodology.pdf)):
+
+> Because motivation is subjective, it is sometimes difficult to know with certainty whether a crime resulted from the offender’s bias. Moreover, the presence of bias alone does not necessarily mean that a crime can be considered a hate crime. Only when a law enforcement investigation reveals sufficient evidence to lead a reasonable and prudent person to conclude that the offender’s actions were motivated, in whole or in part, by his or her bias, should an agency report an incident as a hate crime.
+
+The point is that many hate crimes are not recorded because there is not sufficient evidence, or maybe no evidence at all. In the very first query I showed above, I found out that there were 479 hate crimes, while violent crimes alone in the state tower above 60,000. Statistical significance is much easier to achieve with 60,000 data points instead of 479. Considering some counties have a population under 2,000, a single hate crime occurrence will catapult its per capita rate extremely high compared to 100 hate crimes in a city like Houston.
+
+The last major consideration has to do with agency data. As previously mentioned, some agencies cover multiple counties. This means that an agency covering two counties or more counties might record a hate crime. If organizing crimes by county, this leads to ambiguity - in which county was the crime committed? If organizing crimes by agency, however, we get even more "small number" issues, with many municipalities being small enclaves within large metropolitan areas.
+
 ### Methodology
 
-The first thing to point out is that biased offenses, or hate crimes, are sometimes really easy to identify (e.g., vandalism with slurs), but are mostly not so easy. The FBI defines hate crimes as "criminal offenses that were motivated, in whole or in part, by the offender’s bias against the victim’s race/ethnicity/ancestry, gender, gender identity, religion, disability, or sexual orientation, and were committed against persons, property, or society" ([Hate Crime Methodology](/files/hate_crime_methodology.pdf))
+My solution was to extract the biased offenses first by agency. Then, I grouped the counts by county and found the population. So I had a county, population (which was actually the population of the *agency*), and the number of biased offenses (hate crimes). To make this calculation easier (and prevent too many joins from happening), I used temporary tables (`WITH` function) to make sure I could have the population and offense count in the same place and produce a column with the calculation. Since I was dealing with very small numbers, I found the hate crime rate per 10,000 people. I rounded this number to 3 decimal places to make it cleaner. I was then able to execute a query and get a result:
+
+```sql
+WITH biased_offenses_by_county AS (
+
+SELECT 
+    COUNT(o.offense_id) AS biased_offenses,
+    a.county_name AS county
+FROM
+    nibrs_offense AS o
+        JOIN
+    nibrs_incident AS ni ON o.incident_id = ni.incident_id
+        JOIN
+    agencies AS a ON ni.agency_id = a.agency_id
+        JOIN
+    nibrs_bias_motivation AS nb ON o.offense_id = nb.offense_id
+WHERE
+    nb.bias_id != '88'
+        AND nb.bias_id != '99'
+GROUP BY county
+ORDER BY biased_offenses DESC
+),
+
+county_population AS (
+    SELECT county_name, SUM(population) AS population
+    FROM agencies
+    GROUP BY county_name
+)
+
+SELECT
+	bc.county,
+    ROUND((bc.biased_offenses * 10000.0)/(cp.population), 3) AS biased_offenses_per_10000_people,
+    bc.biased_offenses,
+    cp.population
+FROM biased_offenses_by_county AS bc
+		JOIN
+	county_population AS cp ON bc.county = cp.county_name
+ORDER BY biased_offenses_per_10000_people DESC;
+```
+
+<img alt="image" src="https://github.com/user-attachments/assets/780c9289-5aff-48b7-9097-ce1ace04c627" />
+
+This was pretty close to what I needed, but I hadn't accounted for the small numbers. Rather than deal with that in SQL, I decided to save this table and clean it up in Excel/Tableau - my goal was to have one map without a filter, and annother map with the population floor. Also, I could clean up the overlapping county issue in Excel much easier.
+
+I exported this result into a csv and loaded it in Excel. My goal was to consolidate any overlapping counties into a single county group. There were already some "county groups" like I mentioned before - one had Atascosa, Bexar, and Medina counties all in one. My workflow was to find the largest county group, identify any counties that belonged to it, and add the hate crime count and population to that group. I used the Find and Replace function to execute this. As an example, one of the large county groups at one point was Collin, Dallas, Denton, and Rockwall (it ended up absorbing even more counties). I found any groups that contained only a subset of those counties, replaced the name with the bigger county group:
+
+<img alt="Screenshot 2025-08-19 200624" src="https://github.com/user-attachments/assets/7f087bbc-de40-402f-a454-c04d0ed1c839" />
+
+After this, I had a table with disjoint county groups (many "groups" only had one county), so that there was no overlap. I applied a filter to see only the multi-county groups (only cells with a comma). I made a column in which I used a `SUMIFS` formula - if it found the right county group in the county name column, it would add up the population (and, in the next cell, add up the crime count):
+
+<img alt="Screenshot 2025-08-19 202949" src="https://github.com/user-attachments/assets/ff3d5419-80b5-4f74-aa77-c521a4d00e7b" />
+
+Then I could delete all the duplicate rows and have a single county group with the correct aggregate numbers for population and crime count.
+
+I wish that was the end of it, but I ran into more challenges.
+
+It would have been very hard to use this table for a map in Tableau since I wasn't using individual counties, but rather county groups. It would be hard for Tableau to recognize them. So my friend ChatGPT told me I should make a helper column and break up the county groups by listing each county (by inserting new rows) in this column:
+
+<img alt="image" src="https://github.com/user-attachments/assets/8a798cbd-9043-4177-9557-eea10eac453b" />
+
+Now, while I couldn't have each county group as its own contiguous geographic feature, I could attribute to each county the population and offense count of its county group. In other words (and as you will see), counties in a group will be shaded the same color since they share a per capita hate crime rate, but they will still be shaded and show up as different counties.
+
+I could finally import this table into Tableau:
+
+<img alt="image" src="https://github.com/user-attachments/assets/ec2983c2-5347-4c24-9378-a2f1ed22773a" />
+
+Darker counties
