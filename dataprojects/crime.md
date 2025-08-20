@@ -20,4 +20,6 @@ Here's a brief description of the data in the FBI's own words (from the readme):
 >
 > For detailed information about all the fields provided in NIBRS and how they are collected and presented, please refer to the [official NIBRS documentation](https://ucr.fbi.gov/nibrs/nibrs-user-manual).
 
-Crimes are organized by **incidents** at the hightest level, which can each have multiple **offenses** associated with them (and multiple offenders).
+Crimes are organized by **incidents** at the hightest level. Each incident can have multiple **offenses**, which are essentially separate crimes that occurred in an incident. Each incident can be explored via tables that show administrative info (e.g., whether an offender was cleared exceptionally), property that was lost/damaged, the victims involved, offender demographics, and arrestee information. Everything from the date and hour the incident occurred to the victim's ethnicity to the measure of drugs possessed is contained in the files.
+
+To help explain these relationships, [a very helpful diagram](file) was included in the zip file. There is so much detail included, so I had to pick a focus or else I would spend my entire life exploring it. I chose to focus on hate crime data because I 
