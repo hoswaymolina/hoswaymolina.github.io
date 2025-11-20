@@ -2,9 +2,7 @@
 
 <img src="/images/bank/world_bank_logo.png?raw=true"/>
 
-In June 2025, I went on a transformative and impactful trip to Jordan. I loved immersing myself in the language, food, and people of a nation quite different than any other I had visited.
-
-The country of Jordan will always hold a special place in my heart. Naturally, when I started the first SQL project in Avery Smith's Data Career Jumpstart, I knew that I would focus on Jordanian data. Among Middle Eastern nations, Jordan is quite stable. Historically, they have also had much support and influence from the West. All this considered, I knew it would be interesting to see how Jordan matched up relative to other countries in the region (and across the world). Have they borrowed more or less than others? What kinds of projects have they directed those loans to?
+Many countries have a rich history going back a millennium and a half. Some countries have histories going back multiple millennia. One of those countries is Jordan, a fascinating country that we know a lot about starting in ancient history. Naturally, when I started the first SQL project in Avery Smith's Data Career Jumpstart, I knew that I would focus on Jordanian data. Among Middle Eastern nations, Jordan is quite stable. Historically, they have also had much support and influence from the West. All this considered, I knew it would be interesting to see how Jordan matched up relative to other countries in the region (and across the world). Have they borrowed more or less than others? What kinds of projects have they directed those loans to?
 
 I discovered that:
 
