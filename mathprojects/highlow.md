@@ -42,4 +42,4 @@ In our problem, we have a partition of $S$, namely \{$`B_1`$, $`B_2`$, ... , $`B
 P(W) = \sum_{i=1}^{100} P(W|B_i)P(B_i)
 ```
 
-In other words: The probability of winning the game is equal to finding the probability of winning given a draw of $n$ AND drawing $n$ in the first place (for every possible $n$) and then summing all 100 of these probabilities.
+In other words: The probability of winning the game is equal to finding the probability of winning *given a draw of $n$* AND drawing $n$ in the first place (for every possible $n$), and then summing all 100 of these probabilities.
