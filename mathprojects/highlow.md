@@ -50,5 +50,11 @@ Alternatively, since each $B_i$ is equally likely, each $P(B_i)$ is equal. So we
 P(W) = P(B_i)\sum_{i=1}^{100} P(W|B_i)
 ```
 
+But $P(B_i) = \frac{1}{100}$, so we see that we are actually computing an arithmetic mean:
+
+```math
+P(W) = \frac{\sum_{i=1}^{100} P(W|B_i)}{100}
+```
+
 Figure here to illustrate this???
 
