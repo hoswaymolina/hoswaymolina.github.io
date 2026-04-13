@@ -34,4 +34,8 @@ Using this information, we can use the *law of total probability*. In English, i
 P(A) = \sum_{i=1}^{k} P(A|B_i)P(B_i)
 ```
 
-In our problem, we have a partition of $S$, namely \{$`B_1`$, $`B_2`$, ... , $`B_{100}`$\}, and a subset $W \subset S$.
+In our problem, we have a partition of $S$, namely \{$`B_1`$, $`B_2`$, ... , $`B_{100}`$\}, and a subset $W \subset S$. Plugging these in to the law of total probability gives us
+
+```math
+P(W) = \sum_{i=1}^{100} P(W|B_i)P(B_i)
+```
