@@ -21,6 +21,6 @@ Choosing this way guarantees a chance of winning of at least 50/99 = 50.5%, with
 
 ### Probability of winning overall
 
-We understand how to find the chance of winning if we know n1. But how can we find out the probability of winning the game before we know n1? In other words, what percentage of attempts at this game should we *expect* to win? To answer this, we will use the *law of total probability* 
+We understand how to find the chance of winning if we know n1. But how can we find out the probability of winning the game before we know n1? In other words, what percentage of attempts at this game should we *expect* to win? We can call this the *overall probability* or *average probability* of a win. To answer this, we will use the *law of total probability*:
 
 In this game, there are 100 possibilities for the first number (we'll call it n1). Each element of the sample space (i.e., the set of possible outcomes) is equally likely to be selected since it's a random selection. 
