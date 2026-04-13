@@ -56,5 +56,8 @@ But $P(B_i) = \frac{1}{100}$, so we see that we are actually computing a regular
 P(W) = \frac{\sum_{i=1}^{100} P(W|B_i)}{100}
 ```
 
-Figure here to illustrate this???
+Hence the term *average probability*; the general law of total probability is essentially a weighted average, where the weight is $P(B_i)$. For our problem, we have a special case where each probability is equally weighted. I took advantage of this when calculating our magic number with Google Sheets:
 
+## Calculating the average probability of winning highlow
+
+I decided to use Google Sheets. I placed each $n_1$ from 1 through 100 in column A. Column B calculates $P(W|B_n_1)$ with the simple formula `=(100-A2)/99` for $n_1 \le 50$
