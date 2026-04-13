@@ -10,4 +10,17 @@ This got me thinking - we know the chance of winning given our first draw, but w
 
 ## First... some Probability
 
-Earlier, I mentioned that finding the chance of winning given our first number was straightforward. Let's go over the math behind it. In this game, there are 100 possibilities for the first number (we'll call it n1). Each element of the sample space (i.e., the set of possible outcomes) is equally likely to be selected since it's a random selection. Once n1 is selected, the next number (we'll call it n2) MUST be distinct from n1. This means there are 99 possibilities for n2. If we guess "high", then the chance of winning is equal to the number of outcomes higher than n1 divided by 99. If we subtract this percentage from 100, we get the chance of winning should we guess "low". From this, we see what our intuition told us: if n1 is 50, there are 50 outcomes above n1 versus 49 below. If n1 is 51, there are 50 outcomes below n1 versus 49 above.
+### Probability of winning given first number
+
+Earlier, I mentioned that finding the chance of winning given our first number (we'll call it n1) was straightforward. Let's go over the math. Once n1 is selected, the next number (we'll call it n2) MUST be distinct from n1. This means there are 99 possibilities for n2. If we guess "high", then the chance of winning is equal to the number of outcomes higher than n1 divided by 99. This will be greater than 50% as long as the number of outcomes higher than n1 is at least 50. From this, we see what our intuition told us: if n1 is 50, there are 50 outcomes above n1 versus 49 below. If n1 is 51, there are 50 outcomes below n1 versus 49 above. So we have a rule:
+
+n1 < 51 --> guess "high"
+otherwise --> guess "low"
+
+Choosing this way guarantees a chance of winning of at least 50/99 = 50.5%, with the chance growing as n1 increases or decreases.
+
+### Probability of winning overall
+
+We understand how to find the chance of winning if we know n1. But how can we find out the probability of winning the game before we know n1? In other words, what percentage of attempts at this game should we *expect* to win? To answer this, we will use the *law of total probability* 
+
+In this game, there are 100 possibilities for the first number (we'll call it n1). Each element of the sample space (i.e., the set of possible outcomes) is equally likely to be selected since it's a random selection. 
