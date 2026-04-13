@@ -62,3 +62,4 @@ Hence the term *average probability*; the general law of total probability is es
 
 In Google Sheets, I placed each $n_1$ from 1 through 100 in column A. Column B calculates $P(W|B_n)$ with the simple formula `=(100-A2)/99` for $n_1 \le 50$, and `=(A52-1)/99` for $n_1 \ge 51$. In Column C, I took the difference $1 - P(B_n)$ to get the probability of losing given a draw of $n$ (more on that later). I then calculated the average of column B, which yielded our magic number $P(W)$:
 
+<img src="/images/highlow/goog1.png?raw=true"/>
