@@ -60,4 +60,4 @@ Hence the term *average probability*; the general law of total probability is es
 
 ## Calculating the average probability of winning highlow
 
-I decided to use Google Sheets. I placed each $n_1$ from 1 through 100 in column A. Column B calculates $P(W|B_n_1)$ with the simple formula `=(100-A2)/99` for $n_1 \le 50$
+I decided to use Google Sheets. I placed each $n_1$ from 1 through 100 in column A. Column B calculates $P(W|B_{n_1})$ with the simple formula `=(100-A2)/99` for $n_1 \le 50$
