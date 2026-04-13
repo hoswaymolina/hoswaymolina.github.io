@@ -28,7 +28,7 @@ In this game, there are 100 equally likely possibilities for $n_1$. For each pos
 
 We can break this space $S$ up into groups, or *subsets*; for example, let's group together outcomes with a common $n_1$. In other words, the outcomes \{$`n_1`$ and win\} and \{$`n_1`$ and loss\} would be in the same subset, and they actually constitute the entire subset, since these are the only possible outcomes given $n_1$. Let's call these sets $B_n$, of which there are 100 for each possible $n_1$. These sets do not overlap, ***and*** they constitute the entire sample space $S$ - this means they form a *partition* of the sample space. We might also group together all of the winning outcomes in $S$ - let's call this subset $W$. This would include the outcomes \{2 and win\}, \{3 and win\}, \{4 and win\}, and so on.
 
-Using this information, we can use the *law of total probability*. In words, it states that if we have a partition of a sample space $S$ (where each subset in the partition has a nonzero probability) and some event A that is a subset of $S$, then the probability of A happening is equal to the sum of joint probabilities $A$ *AND* $B_i$ (for each element $B_i$ of the partition). In symbols, we have
+Using this information, we can use the *law of total probability*. In words, it states that if we have a partition with $k$ elements of a sample space $S$ (where each subset in the partition has a nonzero probability), and we have some event A that is a subset of $S$, then the probability of A happening is equal to the sum of joint probabilities $A$ *AND* $B_i$ (for each element $B_i$ of the partition). In symbols, we have
 
 ```math
 P(A) = \sum_{i=1}^{k} P(A|B_i)P(B_i)
