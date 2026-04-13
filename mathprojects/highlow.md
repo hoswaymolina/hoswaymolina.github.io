@@ -26,4 +26,4 @@ We understand how to find the chance of winning if we know $n_1$. But how can we
 
 In this game, there are 100 equally likely possibilities for $n_1$. For each possibility, the player can choose either "high" or "low". Let's assume that the player **only** chooses the option which gives them the best chance at winning. In this case, *after* $n_1$ is selected, there are two possible outcomes: a win or a loss. This means we have exactly 198 scenarios: 2 for $n_1$ = 1 or $n_1$ = 100, where we have a win. For $2 \leq n_1 \leq 99$, we have either a win or a loss, so for 98 numbers, each with 2 possible outcomes, we have $98 \cdot 2 = 196$ outcomes. In statistics, we call the set of all possible outcomes the *sample space*, which we can call $S$.
 
-We can break this space $S$ up into groups, or *subsets*; for example, let's group together outcomes with a common $n_1$. In other words, the outcomes $\{n_1, win\}$ and $\{n_1, loss\}$
+We can break this space $S$ up into groups, or *subsets*; for example, let's group together outcomes with a common $n_1$. In other words, the outcomes $&#123;n_1, win&#123;$ and $&#123;n_1, loss&#123;$
