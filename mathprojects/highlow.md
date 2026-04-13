@@ -12,7 +12,7 @@ This got me thinking - we know the chance of winning given our first draw, but w
 
 ### Probability of winning given first number
 
-Earlier, I mentioned that finding the chance of winning given our first number (we'll call it $n_1$) was straightforward. Let's go over the math. Once $n_1$ is selected, the next number (we'll call it n2) MUST be distinct from $n_1$. This means there are 99 possibilities for n2. If we guess "high", then the chance of winning is equal to the number of outcomes higher than $n_1$ divided by 99. This will be greater than 50% as long as the number of outcomes higher than $n_1$ is at least 50. From this, we see what our intuition told us: if $n_1$ is 50, there are 50 outcomes above $n_1$ versus 49 below. If $n_1$ is 51, there are 50 outcomes below $n_1$ versus 49 above. So we have a rule:
+Earlier, I mentioned that finding the chance of winning given our first number (we'll call it $n_1$) was straightforward. Let's go over the math. Once $n_1$ is selected, the next number (we'll call it $n_2$) MUST be distinct from $n_1$. This means there are 99 possibilities for $n_2$. If we guess "high", then the chance of winning is equal to the number of outcomes higher than $n_1$ divided by 99. This will be greater than 50% as long as the number of outcomes higher than $n_1$ is at least 50. From this, we see what our intuition told us: if $n_1$ is 50, there are 50 outcomes above $n_1$ versus 49 below. If $n_1$ is 51, there are 50 outcomes below $n_1$ versus 49 above. So we have a rule:
 
 $n_1$ < 51 --> guess "high"
 
