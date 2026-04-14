@@ -1,22 +1,24 @@
 # How Likely are you to win a game of "Highlow"?
 
-My friends and I have a Discord server to make it easier to organize online gaming. But we also have some channels that are for fun - one of these is the "pancake" channel, where we collect, earn, and gamble a fake digital currency (pancakes). There are typical gambling games like blackjack and slots, for which much ink has been spilled concerning probability and statistics-informed strategies for winning. I have no more than a terribly basic understanding of those games. However, one of the pancake games is called with a command "p! highlow". I choose to just call the game "Highlow". There is no bet involved, so it's not gambling, but you do earn pancakes if you win.
+<img src="/images/highlow/pancakebot.jpg?raw=true"/>
 
-It's pretty simple: a random integer from 1 to 100 is generated. The player must then decide whether the next randomly generated integer within the range will be higher or lower than the first one. After this, a new number is generated (if it is the same as the first number, a new random number is generated), and if the player is correct, they win the game (and 20 pancakes). Otherwise, they don't lose or gain any pancakes.
+Just like many Gen Z friend groups, my friends and I have a Discord server. We mainly use it for communication when we play video games together. But we also have some random channels - one of these is the "pancake" channel, where we collect, earn, and gamble a fake digital currency (pancakes) using a "pancake bot". There are typical gambling games like blackjack and slots, for which much ink has been spilled concerning probability and statistics-informed strategies for winning. I have no more than a terribly basic understanding of those games. However, one of the pancake games is called with a command "p! highlow". I choose to just call the game "Highlow". There is no bet involved, so it's not gambling, but you do earn pancakes if you win. 20 of them, to be exact. So the stakes are SUPER high.
 
-It's a straightfoward game. The best strategy for winning is intuitive - if our first number (let's call it $n_1$) is 50 or below, we should select "high". Otherwise, we should select "low". Our chance of winning is also straightforward to see - if $n_1$ is 34, then you have around a 66 percent chance of winning, while a draw of 82 yields around an 82 percent chance of winning (we'll be exact about it later). The further your number is from the middle, the better your chances.
+Here's how it works: a random integer from 1 to 100 is generated. The player must then decide whether an additional randomly generated integer from 1 to 100 (excluding the first one) will be higher or lower. After this, a new number is generated, and if the player is correct, they win the game (and 20 pancakes). Otherwise, they don't lose or gain any pancakes.
 
-This got me thinking - we know the chance of winning given our first draw, but what is the chance of winning the game *overall*, before we are given a number in the first place? This question was a bit harder to answer, but it was fun to figure out and also let me practice some of my data/programming skills, so I thought it would be cool to share!
+It's a straightfoward game. The best strategy for winning is intuitive - if our first number (let's call it $n_1$) is 50 or below, we should select "high" since there are more numbers above $n_1$ than below (between 1 and 100). Otherwise, we should select "low". The approximate chance of winning (given we know $n_1$) is also straightforward to see - if $n_1$ is 34, then you have around a 66 percent chance of winning (one percent for each number above 34 and at most 100), while a draw of 82 yields around an 81 percent chance of winning (one percent for each number below 82 and at least 1). We'll figure out the exact percentages later, but the big idea is: The further your number is from the middle, the better your chances of winning.
+
+This got me thinking - we know the chance of winning given our first draw, but what is the chance of winning the game *overall*, before we are given a number in the first place? This question was a bit harder to answer, but it was fun to figure out and also let me practice some of my data/programming skills, so I thought it would be cool to share! My goal was to write for an audience that includes people who are not super well-versed in statistics, so I've included explanations and definitions in places I thought would be helpful. Let's dive in!
 
 ## First... some Probability
 
-### Probability of winning given first number
+### Probability of winning given $n_1$
 
-Earlier, I mentioned that finding the chance of winning given our first number (we'll call it $n_1$) was straightforward. Let's go over the math. Once $n_1$ is selected, the next number (we'll call it $n_2$) MUST be distinct from $n_1$. This means there are 99 possibilities for $n_2$. If we guess "high", then the chance of winning is equal to the number of outcomes higher than $n_1$ divided by 99. This will be greater than 50% as long as the number of outcomes higher than $n_1$ is at least 50. From this, we see what our intuition told us: if $n_1$ is 50, there are 50 outcomes above $n_1$ versus 49 below. If $n_1$ is 51, there are 50 outcomes below $n_1$ versus 49 above. So we have a rule:
+Earlier, I mentioned that finding the chance of winning given our first number ($n_1$) was straightforward. Let's go over the math. Once $n_1$ is selected, the next number (we'll call it $n_2$) MUST be distinct from $n_1$. This means there are 99 possibilities for $n_2$. If we guess "high", then the chance of winning is equal to the number of outcomes higher than $n_1$ divided by 99. This will be greater than 50% as long as the number of outcomes higher than $n_1$ is at least 50. From this, we see what our intuition told us: if $n_1$ is 50, there are 50 outcomes above $n_1$ versus 49 below. If $n_1$ is 51, there are 50 outcomes below $n_1$ versus 49 above. So we have a rule:
 
-$n_1$ < 51 --> guess "high"
+$n_1 < 51$ $\Rightarrow$ guess "high"
 
-otherwise --> guess "low"
+otherwise $\Rightarrow$ guess "low"
 
 Choosing this way guarantees a chance of winning of at least 50/99 = 50.5%, with the chance growing as $n_1$ increases or decreases.
 
@@ -166,4 +168,4 @@ What started as random curiosity has ended up as great practice in statistics, p
 
 # Thank you so much!
 
-Check out (my LinkedIn)[https://hoswaymolina.github.io]
+I appreciate any comments and tips! Check out [my LinkedIn](https://www.linkedin.com/in/hoswaymolina) and send a DM or comment on my post about this project. Thanks for getting this far!
