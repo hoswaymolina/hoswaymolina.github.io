@@ -64,4 +64,9 @@ In Google Sheets, I placed each $n_1$ from 1 through 100 in column A. Column B c
 
 <img src="/images/highlow/goog1.png?raw=true"/>
 
-We can see that the average probability of winning highlow is approximately 75.25%. In other words, one should expect to win this game about $\frac{3}{4}$ of the time.
+We can see that the average probability of winning highlow is approximately 75.25%. So, one should expect to win this game about $\frac{3}{4}$ of the time.
+
+Another interpretation of this result is that if we were to make a set diagram of all the possibilities (where the probability of each event is scaled by its likelihood), about 75% of the area would be covered by winning outcomes. While I didn't technically create a set diagram, I thought it would be a cool idea to  create a visual with the same effect. To this end, I created a stacked bar chart in Google Sheets. Each bar represents an $n_1$ value (from 1 to 100). The bar is broken up proportionally into a blue area representing win probability and a red area representing loss probability. If we condense the chart to cover the area of a square, we can imagine this square as divided into four congruent isosceles triangles (by the two diagonals, shown below as orange lines). We then see that the top triangle which makes up one fourth of the area of the square coincides with the area of the square covered by red:
+
+%<img src="/images/highlow/square.png?raw=true"/>
+
