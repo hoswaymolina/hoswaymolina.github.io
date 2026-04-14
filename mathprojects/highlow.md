@@ -1,4 +1,4 @@
-# How Likely are you to win a game of "Highlow"?
+# What are Your Chances of Winning Highlow?
 
 <img src="/images/highlow/pancakebot.jpg?raw=true"/>
 
