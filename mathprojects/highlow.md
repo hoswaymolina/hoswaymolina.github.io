@@ -1,3 +1,4 @@
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 # What are Your Chances of Winning Highlow?
 
 <img src="/images/highlow/pancakebot.jpg?raw=true"/>
@@ -169,5 +170,3 @@ What started as random curiosity has ended up as great practice in statistics, p
 # Thank you so much!
 
 I appreciate any comments and tips! Check out [my LinkedIn](https://www.linkedin.com/in/hoswaymolina) and send a DM or comment on my post about this project. Thanks for getting this far!
-
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
