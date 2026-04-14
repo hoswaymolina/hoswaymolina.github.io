@@ -142,5 +142,18 @@ plt.legend()
 plt.show()
 ```
 
-As noted in the code, the max number of attempts can be adjusted by changing the value of `max_attempts`. Here is a result for playing the game 1 through 10 times:
+As noted in the code, the max number of attempts can be adjusted by changing the value of `max_attempts`. Here is a result for up to 10 attempts, with the expected win rate as a dotted line:
 
+<img src="/images/highlow/10attempts.png?raw=true"/>
+
+As expected, we have a very wide range of win rates, including ones below 40% for as many as six attempts. With this information, it would be very difficult to determine what the average win rate should be. Let's bump the number up to 100 trials:
+
+<img src="/images/highlow/100attempts.png?raw=true"/>
+
+Now we are beginning to see a signal. There's a lot of noise at first, but if we sample the win rate every tenth iteration (as shown above the graph), we remain pretty consistently in the 70-80 percent range. Now consider 1,000 and 10,000 attempts respectively:
+
+<img src="/images/highlow/1000attempts.png?raw=true"/>
+
+<img src="/images/highlow/10000attempts.png?raw=true"/>
+
+For 10,000 attempts, we see that every thousandth attempt 74 and 76 percent, a pretty tight range. We can clearly see the win rates converging roward the expected win rate of 75.25%.
