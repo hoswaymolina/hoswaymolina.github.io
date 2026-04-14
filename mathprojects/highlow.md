@@ -142,4 +142,5 @@ plt.legend()
 plt.show()
 ```
 
-Here are the results with attempts 1 through 10
+As noted in the code, the max number of attempts can be adjusted by changing the value of `max_attempts`. Here is a result for playing the game 1 through 10 times:
+
