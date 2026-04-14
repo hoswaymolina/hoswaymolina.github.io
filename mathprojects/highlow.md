@@ -76,39 +76,70 @@ This is consistent with our math, which says that we have about a 25% chance of 
 
 If you flip a fair coin, it has a 50 percent chance of being heads or tails. But if you flip it three times, you have a 12.5 percent chance of flipping three heads or three tails in a row. In either case, the experimental probability of flipping heads or tails would be 100%, which does not reflect the expected or average probability. On the other hand, if you flip a coin 100 times, or even 1000 times, the proportion of heads to tails will be much closer. This is known as the *law of large numbers*. The more a random experiment is conducted, the closer the experimental probability of a result approaches the expected probability.
 
-If we play 5 games of highlow, maybe we will win all of them, or only two of them. But if our math is right, then the more games of highlow we play, the closer we should get to winning 75% of them. We can test this out, and I did by writing a short Python program that plays highlow any number of times:
+If we play 5 games of highlow, maybe we will win all of them, or only two of them. But if our math is right, then the more games of highlow we play, the closer we should get to winning 75% of them. We can test this out, and I did by writing a short Python program that plays highlow any number of times and plots the win rate as the attempts increase:
 
 ```python
 import random as rd
+import matplotlib.pyplot as plt
+
+# The following list allows us to track the win rates and plot them.
+win_rates_over_time = []
+
 # This function takes in a desired number of attempts at the game
-# (with correct guesses) and returns the win rate as a percentage
-# rounded to three decimal places.
+# (with strategically correct guesses) and returns the win rate as a
+# percentage rounded to three decimal places.
+
 def highlow(x):
     # i tracks the number of attempts.
     i = 0
     wins = 0
+    
     while i < x:
         i += 1
         n1 = rd.randint(1, 100)
         if n1 <= 50:
             guess = "High"
         else: guess = "Low"
+        
         n2 = rd.randint(1,100)
         # The following while loop prevents n_2 from equalling n_1.
         while n2 == n1:
             n2 = rd.randint(1, 100)
+        
         if n2 > n1:
             answer = "High"
         else: answer = "Low"
+        
         if guess == answer:
             wins += 1
-    win_rate = (wins/x)*100
-    return round(win_rate, 3)
-# The code below may be edited to run the highlow function multiple
-# and with steps of varying sizes (e.g., 1,2,3 attempts, or 100, 200,
-# 300, and 400 attempts).
+    win_rate = round(((wins/x)*100), 3)
+    win_rates_over_time.append(win_rate)
+    return win_rate
+
+# The code below runs highlow "max_attempts" times (adjusting max_attempts will
+# automatically adjust the plot range and when the win rate is printed to avoid
+# excessive printing at high max_attempt numbers).
 attempts = 1
-while attempts <= 10:
-    print(f"for {attempts} attempt(s), the win rate is {highlow(attempts)}%")
+max_attempts = 10
+while attempts <= max_attempts:
+    if attempts % (max_attempts/10) == 0:
+        print(f"for {attempts} attempt(s), the win rate is {highlow(attempts)}%")
+    else: 
+        highlow(attempts)
     attempts += 1
+
+# The following code plots win rates as the number of attempts increases.
+plt.plot(range(1, (max_attempts + 1)), win_rates_over_time, linewidth=0.7)
+plt.xlabel("Number of Attempts")
+plt.ylabel("Win Rate (%)")
+
+plt.title("Win Rate vs Attempts")
+plt.axhline(y=75.25, linestyle='--', label='Expected Win Rate (~75.25%)')
+
+plt.ylim(bottom=0)
+plt.legend()
+
+plt.show()
 ```
+
+Here are the results with attempts 1 through 10
