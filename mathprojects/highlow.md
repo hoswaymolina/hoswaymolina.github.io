@@ -156,4 +156,14 @@ Now we are beginning to see a signal. There's a lot of noise at first, but if we
 
 <img src="/images/highlow/10000attempts.png?raw=true"/>
 
-For 10,000 attempts, we see that every thousandth attempt 74 and 76 percent, a pretty tight range. We can clearly see the win rates converging roward the expected win rate of 75.25%.
+For 10,000 attempts, we see that every thousandth attempt 74 and 76 percent, a pretty tight range. We can clearly see the win rates converging roward the expected win rate of 75.25%. We haven't proven the law of total probability in a formal sense (go see a mathematical statistics textbook for that), but we have some anecdotal evidence that it works!
+
+## Conclusion
+
+Using the law of total probability, we were able to find the expected win rate for the game "highlow". We were then able to see this rate as a share of the area of a square and finally test our findings empirically with the help of Python. As for future directions, I'm sure I could begin with trimming the code and making it more efficient/editable. This could allow for higher maximum trial counts. Additionally, I could edit the code to include user inputs so that anyone could run the program, plug in the desired numbers, and produce any number of custom charts.
+
+What started as random curiosity has ended up as great practice in statistics, probability, programming, and data analytics. I am glad to share this with the world and of course would love to hear any feedback!
+
+# Thank you so much!
+
+Check out (my LinkedIn)[https://hoswaymolina.github.io]
