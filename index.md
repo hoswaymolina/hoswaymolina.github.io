@@ -53,6 +53,10 @@ In this case study from Data Analytics Accelerator, I was prompted to analyze th
 
 ## Mathematics Research/Projects
 
+### [What are Your Chances of Winning Highlow?](/mathprojects/highlow.md)
+[<img src="images/highlow/100attemptschart.png?raw=true"/>](/mathprojects/highlow.md)
+Winning a game is better than losing, and sometimes we can use math to help us find out how much we can expect to win. Read this project to see the power of mathematics to help us make predictions and find patterns in the world around us, including games.
+
 ### [Indiana University REU Project: Cubulated Holonomy](files/Cubulated_Holonomy_REU_report.pdf)
 [<img src="images/REUfig.png?raw=true"/>](files/Cubulated_Holonomy_REU_report.pdf)
 [Stephanie Atherton](https://linktr.ee/toyTeX) and I collaborated on this NSF-funded research project in summer 2024! We focused on the following research question: given the holonomy group of the cube on a surface made of squares, what subgroups can we obtain by varying the surface? We used abstract algebra and algebraic topology to find out.
