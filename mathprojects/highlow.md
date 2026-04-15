@@ -48,21 +48,21 @@ In other words: To find the probability of winning the game, we must find **(for
 
 Alternatively, since each $B_i$ is equally likely, each $P(B_i)$ is equal. So we can treat this term in our formula as a constant and pull it out:
 
-```math
+$$
 P(W) = P(B_i)\sum_{i=1}^{100} P(W|B_i)
-```
+$$
 
 But $P(B_i) = \frac{1}{100}$, so we see that we are actually computing a regular old arithmetic average (mean):
 
-```math
+$$
 P(W) = \frac{\sum_{i=1}^{100} P(W|B_i)}{100}
-```
+$$
 
 Hence the term *average probability*; the general law of total probability is essentially a weighted average, where the weight is $P(B_i)$. For our problem, we have a special case where each probability is equally weighted. I took advantage of this when calculating our magic number with Google Sheets:
 
 ## Calculating the average probability of winning highlow
 
-In Google Sheets, I placed each $n_1$ from 1 through 100 in column A. Column B calculates $P(W|B_n)$ with the simple formula `=(100-A2)/99` for $n_1 \le 50$, and `=(A52-1)/99` for $n_1 \ge 51$. In Column C, I took the difference $1 - P(B_n)$ to get the probability of losing given a draw of $n$ (more on that later). I then calculated the average of column B, which yielded our magic number $P(W)$:
+In Google Sheets, I placed each $n_1$ from 1 through 100 in column A. Column B calculates $P(W \mid B_n)$ with the simple formula `=(100-A2)/99` for $n_1 \le 50$, and `=(A52-1)/99` for $n_1 \ge 51$. In Column C, I took the difference $1 - P(W \mid B_n)$ to get the probability of losing given a draw of $n$ (more on that later). I then calculated the average of column B, which yielded our magic number $P(W)$:
 
 <img src="/images/highlow/goog1.png?raw=true"/>
 
