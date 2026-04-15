@@ -52,7 +52,7 @@ $$
 P(W) = P(B_i)\sum_{i=1}^{100} P(W|B_i)
 $$
 
-But $P(B_i) = \frac{1}{100}$, so we see that we are actually computing a regular old arithmetic average (mean):
+But $P(B_i) = \frac{1}{100}$ for all $i$, so we see that we are actually computing a regular old arithmetic average (mean):
 
 $$
 P(W) = \frac{\sum_{i=1}^{100} P(W|B_i)}{100}
