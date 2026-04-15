@@ -36,7 +36,7 @@ $$
 P(A) = \sum_{i=1}^{k} P(A|B_i)P(B_i)
 $$
 
-$P(A)$ represents the probability of event A, while $P(A|B_i)$ represents the probability of $A$ given the event $B_i$ has occurred.
+$P(A)$ represents the probability of event A, while $P(A\vertB_i)$ represents the probability of $A$ given the event $B_i$ has occurred.
 
 In our problem, we have a partition of $S$, namely \{$B_1$, $B_2$, ... , $B_{100}$\}, and a subset $W \subset S$. Plugging these in to the equation gives us
 
