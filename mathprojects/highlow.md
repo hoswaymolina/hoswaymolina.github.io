@@ -36,7 +36,7 @@ $$
 P(A) = \sum_{i=1}^{k} P(A | B_i)P(B_i)
 $$
 
-$P(A)$ represents the probability of event A, while $P(A \mid B_i)$ represents the probability of $A$ given the event $B_i$ has occurred.
+$P(A)$ represents the probability of event A, while $P(A\midB_i)$ represents the probability of $A$ given the event $B_i$ has occurred.
 
 In our problem, we have a partition of $S$, namely \{$B_1$, $B_2$, ... , $B_{100}$\}, and a subset $W \subset S$. Plugging these in to the equation gives us
 
@@ -44,7 +44,7 @@ $$
 P(W) = \sum_{i=1}^{100} P(W|B_i)P(B_i)
 $$
 
-In other words: To find the probability of winning the game, we must find **(for every possible $n_1$)** the probability of winning *given a draw of* $n_1$ AND drawing $n_1$ in the first place, then summing all 100 of these probabilities. For example, consider $n_1 = 1$. The probability of winning given a draw of 1 is 100%, while the probability of drawing a 1 is 1%. So, the probability of the outcome \{1 and win\} is 1%. Now consider $n_1 = 25$. The probability of winning given a draw of 25 is $\frac{100-25}{99} = 75.76\\%$, while the probability of drawing a 25 is 1%. Thus, the probability of the outcome \{25 and win\} is approximately 0.76%. Intuitively, adding up these probabilities makes sense: We are simply finding the probability of \{$`n_1`$ and win\} for all $n_1$. Each of these events has no overlap (since more than one $n_1$ cannot be drawn) and constitutes all of the winning events, meaning we just have to sum their probabilities to get the overall probability of winning the game.
+In other words: To find the probability of winning the game, we must find **(for every possible $n_1$)** the probability of winning *given a draw of* $n_1$ AND drawing $n_1$ in the first place, then summing all 100 of these probabilities. For example, consider $n_1 = 1$. The probability of winning given a draw of 1 is 100%, while the probability of drawing a 1 is 1%. So, the probability of the outcome \{1 and win\} is 1%. Now consider $n_1 = 25$. The probability of winning given a draw of 25 is $\frac{100-25}{99} = 75.76\\%$, while the probability of drawing a 25 is 1%. Thus, the probability of the outcome \{25 and win\} is approximately 0.76%. Intuitively, adding up these probabilities makes sense: We are simply finding the probability of \{$n_1$ and win\} for all $n_1$. Each of these events has no overlap (since more than one $n_1$ cannot be drawn) and constitutes all of the winning events, meaning we just have to sum their probabilities to get the overall probability of winning the game.
 
 Alternatively, since each $B_i$ is equally likely, each $P(B_i)$ is equal. So we can treat this term in our formula as a constant and pull it out:
 
