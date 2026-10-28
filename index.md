@@ -5,8 +5,13 @@
 ## Learn About My Projects
 
 ---
-## Data Analytics
+## Data Science/Analytics
 
+### [Predicting Beijing air quality: when does ML beat a simple baseline?](https://github.com/hoswaymolina/beijing_air_quality)
+[<img src="images/monthly_pm25.png?raw=true"/>](https://github.com/hoswaymolina/beijing_air_quality)
+To answer this question, I downloaded data from the UCI Machine Learning Repository, cleaned the data, made a train/test split by year, and some random forest models. The random forest models did well on predicting current pollution, but had a harder time on predicting the future. Click on the link or the image to see the project on GitHub!
+
+---
 ### [A Dive Into FBI Crime Data (Excel, SQL, Tableau)](/dataprojects/crime.md)
 [<img src="images/crime_thumbnail.png?raw=true"/>](/dataprojects/crime.md)
 I got to practice Excel, SQL, and Tableau (and make a cool dashboard) in this fascinating crime data analytics project!
